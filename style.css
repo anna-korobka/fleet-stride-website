@@ -1,0 +1,49 @@
+/* Add your full gradient, dark theme, and card styling from the template */
+body {
+  background: #050608;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, #ff6f00 0%, transparent 60%),
+              radial-gradient(circle at bottom right, #b22b27 0%, transparent 60%);
+  opacity: 0.35;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+.hero-title { font-family: 'Montserrat', sans-serif; font-size: 3rem; font-weight: 700; }
+.btn-fs-primary {
+  background: #ff6f00;
+  color: #000;
+  border-radius: 50px;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+.btn-fs-ghost {
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 50px;
+  color: #fff;
+  padding: 10px 25px;
+}
+.section-padding { padding: 5rem 0; }
+.section-kicker { color: #ff6f00; text-transform: uppercase; letter-spacing: 2px; }
+.section-heading { font-family: 'Montserrat'; font-weight: 700; }
+.fs-card {
+  background: rgba(255,255,255,0.06);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+}
