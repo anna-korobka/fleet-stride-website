@@ -1,23 +1,20 @@
 body {
   min-height: 100vh;
-  background: linear-gradient(to bottom, #1a2233 0%, #23292f 100%);
+  background: linear-gradient(135deg, #1a2233 0%, #26292f 70%, #ba4530 100%);
   color: #fff;
   font-family: 'Inter', sans-serif;
 }
-
 h1, h2, h3, h4, h5, h6, p,
 .hero-title, .section-heading, .fs-card-title, .fs-muted {
   white-space: normal !important;
   word-break: break-word;
   overflow-wrap: break-word;
 }
-
 .navbar {
   background: rgba(13,19,33,0.93) !important;
   box-shadow: 0 4px 24px rgba(8,12,19,0.21);
   backdrop-filter: blur(8px);
 }
-
 .hero-section {
   min-height: 100vh;
   width: 100vw;
@@ -30,22 +27,24 @@ h1, h2, h3, h4, h5, h6, p,
   padding: 0;
 }
 
+/* Subtle orange and blue radial glows behind the hero */
 .hero-bg {
   position: absolute;
   inset: 0;
   z-index: 1;
   background:
-    radial-gradient(circle at 60% 40%, #ff6f0030 0%, transparent 60%),
-    radial-gradient(circle at 20% 80%, #1890ff24 0%, transparent 80%);
-  opacity: 0.5;
+    radial-gradient(ellipse at 60% 40%, #ff6f0030 0%, transparent 60%),
+    radial-gradient(ellipse at 25% 85%, #1890ff2b 0%, transparent 80%);
+  opacity: 0.65;
   pointer-events: none;
 }
 
+/* Adds a faint glassy overlay for contrast */
 .hero-overlay {
   position: absolute;
   inset: 0;
   z-index: 2;
-  background: rgba(20, 26, 36, 0.62);
+  background: rgba(26, 34, 51, 0.50);
   pointer-events: none;
 }
 
@@ -61,7 +60,6 @@ h1, h2, h3, h4, h5, h6, p,
   align-items: center;
   text-align: center;
 }
-
 .hero-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
@@ -72,7 +70,6 @@ h1, h2, h3, h4, h5, h6, p,
   color: #fff;
   text-align: center;
 }
-
 .hero-sub {
   font-size: 1.2rem;
   margin-bottom: 2rem;
@@ -80,7 +77,6 @@ h1, h2, h3, h4, h5, h6, p,
   max-width: 600px;
   text-align: center;
 }
-
 .hero-buttons {
   display: flex;
   gap: 1rem;
@@ -89,7 +85,6 @@ h1, h2, h3, h4, h5, h6, p,
   justify-content: center;
   width: 100%;
 }
-
 .hero-pill {
   display: inline-block;
   font-size: 1.1rem;
@@ -103,7 +98,7 @@ h1, h2, h3, h4, h5, h6, p,
   border: 1.5px solid #ff6f00;
 }
 
-/* MODERN, ORANGE CTA BUTTON */
+/* MODERN, BOLD, GLOWING BUTTON */
 .btn-fs-modern {
   background: #ff6f00;
   color: #fff !important;
@@ -114,28 +109,27 @@ h1, h2, h3, h4, h5, h6, p,
   font-size: 1.08rem;
   letter-spacing: 0.03em;
   padding: 0.6em 2em;
-  box-shadow: 0 8px 32px 0 rgba(255,111,0,0.22), 0 1.5px 14px rgba(24,144,255,0.05);
-  transition: background 0.15s, color 0.15s, box-shadow 0.17s;
+  box-shadow: 0 8px 32px 0 rgba(255,111,0,0.22), 0 1.5px 14px rgba(24,144,255,0.06);
+  transition: background 0.18s, color 0.16s, box-shadow 0.18s;
   outline: none;
   text-shadow: none;
   opacity: 1 !important;
   pointer-events: auto;
 }
-
 .btn-fs-modern:hover,
 .btn-fs-modern:focus,
 .btn-fs-modern:active {
   background: #fff;
   color: #ff6f00 !important;
-  box-shadow: 0 14px 44px 0 rgba(255,111,0,0.29), 0 2px 20px rgba(24,144,255,0.08);
+  box-shadow: 0 14px 44px 0 rgba(255,111,0,0.32), 0 2px 20px rgba(24,144,255,0.08);
 }
-
 .btn-fs-modern:focus-visible {
   outline: 2px solid #ff6f00;
   outline-offset: 1.5px;
 }
-
-/* Section heading kicker as blue accent */
+.section-padding {
+  padding: 4.5rem 0 4.5rem 0;
+}
 .section-kicker {
   color: #1890ff;
   text-transform: uppercase;
@@ -144,11 +138,6 @@ h1, h2, h3, h4, h5, h6, p,
   margin-bottom: 0.7em;
   font-weight: 600;
 }
-
-.section-padding {
-  padding: 4.5rem 0 4.5rem 0;
-}
-
 .section-heading {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.1rem;
@@ -156,19 +145,16 @@ h1, h2, h3, h4, h5, h6, p,
   margin-bottom: 2rem;
   color: #fff;
 }
-
 .fs-muted {
   color: #dbdbdb;
   font-size: 1.09rem;
 }
-
 .row.g-4 {
   --bs-gutter-x: 2rem;
   --bs-gutter-y: 2rem;
 }
-
 .fs-card {
-  background: rgba(20, 26, 36, 0.92);
+  background: rgba(26, 34, 51, 0.94);
   border-radius: 1.2rem;
   padding: 2rem 1.5rem 1.7rem 1.5rem;
   backdrop-filter: blur(12px);
@@ -179,7 +165,6 @@ h1, h2, h3, h4, h5, h6, p,
   color: #fff;
   transition: box-shadow 0.2s, transform 0.15s, border-color .18s;
 }
-
 .fs-card-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.22rem;
@@ -187,13 +172,11 @@ h1, h2, h3, h4, h5, h6, p,
   margin-bottom: 0.5em;
   color: #fff;
 }
-
 .fs-card:hover {
   box-shadow: 0 14px 50px #ff6f0022, 0 2px 8px #1890ff22;
   border-color: #ff6f00;
   transform: translateY(-2px) scale(1.019);
 }
-
 @media (max-width: 992px) {
   .hero-title { font-size: 2.2rem; }
   .section-heading { font-size: 1.5rem; }
