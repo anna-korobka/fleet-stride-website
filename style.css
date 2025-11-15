@@ -1,27 +1,23 @@
-/* Base full-page vertical gradient background */
 body {
   min-height: 100vh;
   background: linear-gradient(to bottom, #1a0307 0%, #ba4530 60%, #30211d 100%);
   color: #fff;
   font-family: 'Inter', sans-serif;
 }
-
-/* Ensure text wraps everywhere */
 h1, h2, h3, h4, h5, h6, p,
 .hero-title, .section-heading, .fs-card-title, .fs-muted {
   white-space: normal !important;
   word-break: break-word;
   overflow-wrap: break-word;
 }
-
 .navbar {
   background: rgba(10, 6, 19, 0.9) !important;
   box-shadow: 0 4px 24px rgba(0,0,0,0.16);
   backdrop-filter: blur(8px);
 }
-
 .hero-section {
   min-height: 100vh;
+  width: 100vw;
   position: relative;
   display: flex;
   align-items: center;
@@ -30,7 +26,6 @@ h1, h2, h3, h4, h5, h6, p,
   overflow: hidden;
   padding: 0;
 }
-
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -40,7 +35,6 @@ h1, h2, h3, h4, h5, h6, p,
   opacity: 0.5;
   pointer-events: none;
 }
-
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -48,8 +42,6 @@ h1, h2, h3, h4, h5, h6, p,
   background: rgba(0,0,0,0.56);
   pointer-events: none;
 }
-
-/* --- HERO CONTENT IMPROVED --- */
 .hero-content {
   position: relative;
   z-index: 3;
@@ -61,6 +53,19 @@ h1, h2, h3, h4, h5, h6, p,
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.hero-top-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  z-index: 10;
+  position: relative;
+}
+.hero-top-button .btn-fs-primary {
+  font-size: 1.05rem;
+  padding: 0.85em 2.3em;
+  box-shadow: 0 4px 24px rgba(255, 111, 0, 0.13);
 }
 .hero-title {
   font-family: 'Montserrat', sans-serif;
@@ -79,6 +84,14 @@ h1, h2, h3, h4, h5, h6, p,
   max-width: 600px;
   text-align: center;
 }
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
 .hero-pill {
   display: inline-block;
   font-size: 1.1rem;
@@ -91,8 +104,6 @@ h1, h2, h3, h4, h5, h6, p,
   letter-spacing: 0.05em;
   border: 1px solid rgba(255,255,255,0.12);
 }
-
-/* Button styles */
 .btn-fs-primary {
   background: #ff6f00;
   color: #000;
@@ -119,8 +130,6 @@ h1, h2, h3, h4, h5, h6, p,
   border-color: #ff6f00;
   color: #ff6f00;
 }
-
-/* Section & Card Styling */
 .section-padding {
   padding: 4.5rem 0 4.5rem 0;
 }
@@ -147,7 +156,6 @@ h1, h2, h3, h4, h5, h6, p,
   --bs-gutter-x: 2rem;
   --bs-gutter-y: 2rem;
 }
-/* Glassmorphism card effect */
 .fs-card {
   background: rgba(255,255,255,0.10);
   border-radius: 1.2rem;
@@ -171,8 +179,6 @@ h1, h2, h3, h4, h5, h6, p,
   box-shadow: 0 12px 48px rgba(255,111,0,0.08), 0 2px 8px rgba(0,0,0,0.23);
   transform: translateY(-2px) scale(1.01);
 }
-
-/* Responsive tweaks */
 @media (max-width: 992px) {
   .hero-title { font-size: 2.2rem; }
   .section-heading { font-size: 1.5rem; }
@@ -181,5 +187,5 @@ h1, h2, h3, h4, h5, h6, p,
 @media (max-width: 550px) {
   .section-padding { padding: 2.5rem 0; }
   .fs-card { padding: 1.1rem 1rem 0.9rem 1rem; }
+  .hero-top-button .btn-fs-primary { padding: 0.75em 1.5em; font-size: 1em; }
 }
-
