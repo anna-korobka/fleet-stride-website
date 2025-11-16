@@ -1,7 +1,7 @@
 body {
   min-height: 100vh;
   /* Gradient starts orange higher: orange appears from 40% down */
-  background: linear-gradient(135deg, #ba4530 0%, #ba4530 40%, #1a2233 80%, #23292f 100%);
+  background: linear-gradient(135deg, #1a2233 0%, #26292f 50%, #ba4530 100%);
   color: #fff;
   font-family: 'Inter', sans-serif;
 }
@@ -172,3 +172,4 @@ body {
   .section-padding { padding: 1.5rem 0; }
   .fs-card { padding: 0.9rem 0.7rem 0.7rem 0.7rem; }
 }
+
