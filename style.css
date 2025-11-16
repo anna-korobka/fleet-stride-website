@@ -86,17 +86,17 @@ h1, h2, h3, h4, h5, h6, p,
   width: 100%;
 }
 .hero-pill {
-  display: inline-block;
-  font-size: 0.96rem;
-  color: #ff6f00;
+  color: #ff9100;         /* bright friendly orange */
   font-weight: 600;
-  border: 1px solid #ff9100;
-  border-radius: 0.7em;
-  padding: 0.13em 0.86em;
-  background: rgba(20,26,36,0.10);
-  margin-bottom: 0.55rem;
+  font-size: 1rem;
   letter-spacing: 0.03em;
-  transition: border-color 0.15s, color 0.15s;
+  /* Remove background, border, border-radius, padding */
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 0.6rem;  /* optional, for spacing */
+  display: inline;
 }
 /* Primary CTA button */
 .btn-fs-modern {
@@ -211,6 +211,7 @@ h1, h2, h3, h4, h5, h6, p,
   .section-padding { padding: 1.2rem 0; }
   .fs-card { padding: 0.6rem 0.4rem 0.55rem 0.4rem; }
 }
+
 
 
 
