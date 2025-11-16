@@ -1,15 +1,18 @@
 body {
   min-height: 100vh;
   background: linear-gradient(135deg, #1a2233 0%, #26292f 60%, #ba4530 100%);
-  color: #fff;
+  color: #fff !important;
   font-family: 'Inter', sans-serif;
 }
+
+/* Force white text for all headings, subheadings, and paragraphs */
 h1, h2, h3, h4, h5, h6, p,
-.hero-title, .section-heading, .fs-card-title, .fs-muted {
-  white-space: normal !important;
-  word-break: break-word;
-  overflow-wrap: break-word;
+.hero-title, .section-heading, .fs-card-title, .fs-muted, .section-kicker, .fs-card, .section-padding, section, .container {
+  color: #fff !important;
+  background: none !important;
+  border: none !important;
 }
+
 /* Nav stays same */
 .navbar {
   background: rgba(13,19,33,0.96) !important;
@@ -19,9 +22,10 @@ h1, h2, h3, h4, h5, h6, p,
   top: 0;
   z-index: 30;
 }
+
 /* HERO SECTION -- MORE COMPACT */
 .hero-section {
-  min-height: 80vh; /* was 100vh */
+  min-height: 80vh;
   width: 100vw;
   position: relative;
   display: flex;
@@ -54,7 +58,7 @@ h1, h2, h3, h4, h5, h6, p,
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0.7rem 1rem 0 1rem; /* tighten top/bottom, side compact */
+  padding: 0.7rem 1rem 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,18 +66,18 @@ h1, h2, h3, h4, h5, h6, p,
 }
 .hero-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.3rem;       /* was 2.5rem */
+  font-size: 2.3rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.07;
   margin-bottom: 0.7rem;
-  color: #fff;
+  color: #fff !important;
   text-align: center;
 }
 .hero-sub {
-  font-size: 1rem;         /* was 1.15rem */
-  margin-bottom: 0.65rem;  /* was 1.2rem */
-  color: #e0e0e0;
+  font-size: 1rem;
+  margin-bottom: 0.65rem;
+  color: #e0e0e0 !important;
   max-width: 600px;
   text-align: center;
 }
@@ -85,19 +89,21 @@ h1, h2, h3, h4, h5, h6, p,
   justify-content: center;
   width: 100%;
 }
+
+/* Remove pill styles: just bold, uppercase orange text */
 .hero-pill {
-  color: #ff9100;         /* bright friendly orange */
-  font-weight: 600;
+  color: #ff9100 !important;
+  font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.03em;
-  /* Remove background, border, border-radius, padding */
-  background: none;
-  border: none;
-  border-radius: 0;
-  padding: 0;
-  margin-bottom: 0.6rem;  /* optional, for spacing */
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 0.6rem;
   display: inline;
 }
+
 /* Primary CTA button */
 .btn-fs-modern {
   background: #ff6f00;
@@ -145,44 +151,50 @@ h1, h2, h3, h4, h5, h6, p,
   outline: 2px solid #ff6f00;
   outline-offset: 1.5px;
 }
-/* Tighter section margins */
 .section-padding {
-  padding: 2rem 0 2rem 0;   /* was 4rem */
+  padding: 2rem 0 2rem 0;
+  background: none !important;
+  color: #fff !important;
 }
 .section-kicker {
-  color: #1890ff;
+  color: #1890ff !important;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.96rem;
   margin-bottom: 0.4em;
   font-weight: 600;
+  background: none !important;
+  border: none !important;
 }
 .section-heading {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;        /* was 2rem */
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 0.7rem;    /* was 1.6rem */
-  color: #fff;
+  margin-bottom: 0.7rem;
+  color: #fff !important;
+  background: none !important;
+  border: none !important;
 }
 .fs-muted {
-  color: #dbdbdb;
+  color: #dbdbdb !important;
   font-size: 1.03rem;
+  background: none !important;
+  border: none !important;
 }
-/* Cards */
 .row.g-4 {
   --bs-gutter-x: 1.2rem;
   --bs-gutter-y: 1.2rem;
 }
 .fs-card {
-  background: rgba(26, 34, 51, 0.97);
+  background: rgba(26, 34, 51, 0.97) !important;
   border-radius: 1.15rem;
-  padding: 1.1rem 0.8rem 1rem 0.8rem; /* was 2rem 1.5rem 1.7rem 1.5rem */
+  padding: 1.1rem 0.8rem 1rem 0.8rem;
   backdrop-filter: blur(8px);
   box-shadow: 0 5px 25px rgba(24,144,255,0.06);
   border: 1.2px solid #222a3a;
   min-width: 0;
   max-width: 100%;
-  color: #fff;
+  color: #fff !important;
   transition: box-shadow 0.16s, transform 0.12s, border-color .11s;
 }
 .fs-card-title {
@@ -190,7 +202,8 @@ h1, h2, h3, h4, h5, h6, p,
   font-size: 1.03rem;
   font-weight: 700;
   margin-bottom: 0.32em;
-  color: #fff;
+  color: #fff !important;
+  background: none !important;
 }
 .fs-card:hover {
   box-shadow: 0 8px 26px #ff6f0021, 0 2px 8px #1890ff19;
@@ -211,7 +224,3 @@ h1, h2, h3, h4, h5, h6, p,
   .section-padding { padding: 1.2rem 0; }
   .fs-card { padding: 0.6rem 0.4rem 0.55rem 0.4rem; }
 }
-
-
-
-
