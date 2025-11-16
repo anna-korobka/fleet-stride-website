@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6, p,
 .hero-pill {
   display: inline-block;
   font-size: 0.96rem;
-  color: #ff9100;
+  color: #ff6f00;
   font-weight: 600;
   border: 1px solid #ff9100;
   border-radius: 0.7em;
@@ -212,4 +212,5 @@ h1, h2, h3, h4, h5, h6, p,
   .section-padding { padding: 1.2rem 0; }
   .fs-card { padding: 0.6rem 0.4rem 0.55rem 0.4rem; }
 }
+
 
