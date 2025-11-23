@@ -4,14 +4,15 @@ body {
   color: #fff !important;
   font-family: 'Inter', sans-serif;
 }
-/* Force white text for headings, subheadings, and paragraphs (no global background reset) */
+
+/* Universal headline and paragraph text to white */
 h1, h2, h3, h4, h5, h6, p,
 .hero-title, .section-heading, .fs-card-title, .fs-muted, .section-kicker, .fs-card, .section-padding {
   color: #fff !important;
   border: none !important;
 }
 
-/* Nav stays same */
+/* Navbar */
 .navbar {
   background: rgba(13,19,33,0.96) !important;
   box-shadow: 0 4px 24px rgba(8,12,19,0.21);
@@ -21,7 +22,7 @@ h1, h2, h3, h4, h5, h6, p,
   z-index: 30;
 }
 
-/* HERO SECTION -- MORE COMPACT */
+/* Hero Section */
 .hero-section {
   min-height: 80vh;
   width: 100vw;
@@ -33,16 +34,24 @@ h1, h2, h3, h4, h5, h6, p,
   overflow: hidden;
   padding: 0;
 }
+
 .hero-bg {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background:
-    radial-gradient(ellipse at 60% 33%, #ff6f0030 0%, transparent 60%),
-    radial-gradient(ellipse at 25% 85%, #1890ff2b 0%, transparent 80%);
-  opacity: 0.7;
+  background: linear-gradient(110deg, #232839 0%, #38405c 80%, #2290ff 100%);
+}
+
+.fleet-road-svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 110px;
+  z-index: 2;
   pointer-events: none;
 }
+
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -50,6 +59,7 @@ h1, h2, h3, h4, h5, h6, p,
   background: rgba(26, 34, 51, 0.50);
   pointer-events: none;
 }
+
 .hero-content {
   position: relative;
   z-index: 3;
@@ -62,6 +72,7 @@ h1, h2, h3, h4, h5, h6, p,
   align-items: center;
   text-align: center;
 }
+
 .hero-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.3rem;
@@ -87,7 +98,6 @@ h1, h2, h3, h4, h5, h6, p,
   justify-content: center;
   width: 100%;
 }
-/* Remove pill styles: just bold, uppercase orange text */
 .hero-pill {
   color: #ff9100 !important;
   font-weight: 700;
@@ -111,7 +121,8 @@ h1, h2, h3, h4, h5, h6, p,
   font-size: 1.05rem;
   letter-spacing: 0.03em;
   padding: 0.55em 1.7em;
-  box-shadow: 0 7px 24px 0 rgba(255,111,0,0.21), 0 1.2px 11px rgba(24,144,255,0.05);
+  box-shadow: 0 7px 24px 0 rgba(255,111,0,0.21),
+              0 1.2px 11px rgba(24,144,255,0.05);
   transition: background 0.18s, color 0.16s, box-shadow 0.18s;
   outline: none;
   text-shadow: none;
@@ -123,7 +134,8 @@ h1, h2, h3, h4, h5, h6, p,
 .btn-fs-modern:active {
   background: #fff;
   color: #ff6f00 !important;
-  box-shadow: 0 10px 28px 0 rgba(255,111,0,0.28), 0 2px 18px rgba(24,144,255,0.08);
+  box-shadow: 0 10px 28px 0 rgba(255,111,0,0.28),
+              0 2px 18px rgba(24,144,255,0.08);
 }
 /* Outlined secondary button */
 .btn-fs-outline {
@@ -151,7 +163,6 @@ h1, h2, h3, h4, h5, h6, p,
   padding: 2rem 0 2rem 0;
   color: #fff !important;
 }
-
 .section-kicker {
   color: #1890ff !important;
   text-transform: uppercase;
@@ -216,23 +227,3 @@ h1, h2, h3, h4, h5, h6, p,
   .section-padding { padding: 1.2rem 0; }
   .fs-card { padding: 0.6rem 0.4rem 0.55rem 0.4rem; }
 }
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(110deg, #232839 0%, #38405c 80%, #2290ff 100%);
-}
-.fleet-road-svg {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 110px;
-  z-index: 2;
-  pointer-events: none;
-}
-.hero-content {
-  position: relative;
-  z-index: 3;
-}
-
