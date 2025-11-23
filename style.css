@@ -233,8 +233,13 @@ section * {
     repeating-linear-gradient(60deg, rgba(255,255,255,0.07) 0 2px, transparent 2px 40px);
   background-blend-mode: overlay;
 }
-/* 
-// REMOVED - This would cause backgrounds to disappear from sections or containers
-// section, .container { background: none !important; }
-*/
+/* Ensure navbar links and brand are white */
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #fff !important;
+}
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+  color: #ff9100 !important;
+}
 
