@@ -112,32 +112,33 @@ h1, h2, h3, h4, h5, h6, p,
   margin-bottom: 0.6rem;
   display: inline;
 }
-/* Primary CTA button - smaller size */
+/* Primary CTA button - even smaller and matches rest of text */
 .btn-fs-modern {
   background: #ff6f00;
   color: #fff !important;
   border: none;
   border-radius: 18px;
-  font-family: 'Inter', 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 1.17rem; /* slightly increased from 1.05rem, but still smaller than the big style */
-  letter-spacing: 0.03em;
-  padding: 0.48em 1.3em; /* smaller padding */
-  box-shadow: 0 7px 24px 0 rgba(255,111,0,0.21),
-              0 1.2px 11px rgba(24,144,255,0.05);
+  font-family: 'Inter', sans-serif; /* match rest of your text */
+  font-weight: 500;
+  font-size: 1rem; /* exactly as .hero-sub and nav text */
+  letter-spacing: 0.02em;
+  padding: 0.32em 0.88em; /* tighter for smaller button */
+  box-shadow: 0 5px 12px 0 rgba(255,111,0,0.18),
+              0 1px 4px rgba(24,144,255,0.03);
   transition: background 0.18s, color 0.16s, box-shadow 0.18s;
   outline: none;
   text-shadow: none;
   opacity: 1 !important;
   pointer-events: auto;
+  margin-top: 0.1em;
 }
 .btn-fs-modern:hover,
 .btn-fs-modern:focus,
 .btn-fs-modern:active {
   background: #fff;
   color: #ff6f00 !important;
-  box-shadow: 0 10px 28px 0 rgba(255,111,0,0.28),
-              0 2px 18px rgba(24,144,255,0.08);
+  box-shadow: 0 10px 22px 0 rgba(255,111,0,0.18),
+              0 2px 10px rgba(24,144,255,0.04);
 }
 /* Outlined secondary button */
 .btn-fs-outline {
@@ -224,7 +225,7 @@ h1, h2, h3, h4, h5, h6, p,
   .hero-title { font-size: 1.10rem; }
   .hero-sub { font-size: 0.92rem; }
   .section-heading { font-size: 0.93rem; }
-  .btn-fs-modern { font-size: 1.01rem; padding: 0.36em 0.9em; }
+  .btn-fs-modern { font-size: 0.93rem; padding: 0.25em 0.7em; }
 }
 @media (max-width: 550px) {
   .section-padding { padding: 1.2rem 0; }
