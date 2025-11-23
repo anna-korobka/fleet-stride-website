@@ -1,195 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fleet Stride Logistics</title>
-  <link href="style.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg fixed-top fs-nav">
-    <div class="container">
-      <a class="navbar-brand text-white" href="#hero">Fleet Stride Logistics</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#who">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#promise">Why Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#future">Vision</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <section id="hero" class="hero-section">
-<div class="hero-bg"></div>
-<svg class="fleet-obvious-svg" width="100%" height="135" viewBox="0 0 800 120" aria-hidden="true" focusable="false" preserveAspectRatio="none">
-  <!-- Ground shadow -->
-  <ellipse cx="400" cy="98" rx="350" ry="18" fill="#2290ff" opacity="0.07" filter="blur(3px)" />
-  <!-- Faint baseline -->
-  <line x1="40" y1="83" x2="760" y2="83" stroke="#fff" stroke-width="2.3" opacity="0.13"/>
-  <!-- Fleet vans (left to right) -->
-  <!-- Van 1 (white) -->
-  <g opacity="0.20">
-    <rect x="105" y="60" width="54" height="20" rx="7" fill="#fff"/>
-    <rect x="146" y="70" width="13" height="10" rx="4" fill="#fff"/>
-    <circle cx="120" cy="84" r="3.2" fill="#fff" />
-    <circle cx="150" cy="84" r="3.2" fill="#fff" />
-  </g>
-  <!-- Van 2 (white) -->
-  <g opacity="0.23">
-    <rect x="185" y="62" width="63" height="19" rx="8" fill="#fff"/>
-    <rect x="234" y="72" width="14" height="9" rx="4" fill="#fff"/>
-    <circle cx="198" cy="84" r="3.3" fill="#fff"/>
-    <circle cx="235" cy="84" r="3.3" fill="#fff"/>
-  </g>
-  <!-- Van 3 (lead: orange, glowing, nudged forward) -->
-  <g filter="url(#leadShadow)">
-    <rect x="280" y="52" width="72" height="26" rx="9" fill="#ff9100" opacity="0.79"/>
-    <rect x="334" y="66" width="18" height="12" rx="4" fill="#ff9100" opacity="0.90"/>
-    <circle cx="297" cy="80" r="4.2" fill="#ff9100" opacity="0.92"/>
-    <circle cx="334" cy="80" r="4.2" fill="#ff9100" opacity="0.88"/>
-  </g>
-  <!-- Van 4 (white) -->
-  <g opacity="0.18">
-    <rect x="375" y="66" width="62" height="17" rx="8" fill="#fff"/>
-    <rect x="420" y="75" width="12" height="8" rx="4" fill="#fff"/>
-    <circle cx="388" cy="85" r="2.8" fill="#fff"/>
-    <circle cx="420" cy="85" r="2.8" fill="#fff"/>
-  </g>
-  <!-- Van 5 (blue highlight) -->
-  <g opacity="0.37">
-    <rect x="480" y="62" width="60" height="20" rx="8" fill="#2290ff"/>
-    <rect x="528" y="73" width="12" height="8" rx="4" fill="#2290ff"/>
-    <circle cx="490" cy="84" r="3.6" fill="#2290ff"/>
-    <circle cx="525" cy="84" r="3.6" fill="#2290ff"/>
-  </g>
-  <!-- ... add more vans if desired ... -->
-  <defs>
-    <filter id="leadShadow" x="-20%" y="-20%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#ff9100" flood-opacity="0.33"/>
-      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#fff" flood-opacity="0.11"/>
-    </filter>
-  </defs>
-</svg>
-<svg class="fleet-minimal-svg" width="100%" height="128" viewBox="0 0 800 110" preserveAspectRatio="none">
-  <!-- Soft ellipse "ground/motion shadow" -->
-  <ellipse cx="400" cy="90" rx="350" ry="18" fill="#000" opacity="0.15"/>
-  <!-- Faint horizon/baseline -->
-  <line x1="40" y1="80" x2="760" y2="80" stroke="#fff" stroke-width="2.2" opacity="0.09"/>
-  <!-- Minimal “vans” as rectangles, differing sizes/positions -->
-  <rect x="65"  y="60" width="66" height="20" rx="4" fill="#fff" opacity="0.07"/>
-  <rect x="165" y="65" width="68" height="15" rx="4" fill="#fff" opacity="0.10"/>
-  <!-- Accent lead van -->
-  <rect x="265" y="55" width="74" height="25" rx="5" fill="#ff9100" opacity="0.22"/>
-  <rect x="375" y="61" width="80" height="19" rx="4" fill="#fff" opacity="0.08"/>
-  <rect x="490" y="58" width="69" height="22" rx="4" fill="#fff" opacity="0.09"/>
-  <rect x="585" y="63" width="58" height="17" rx="3" fill="#fff" opacity="0.07"/>
-  <rect x="665" y="59" width="58" height="21" rx="3" fill="#fff" opacity="0.06"/>
-</svg>
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <p class="hero-pill"><span></span> Orange County • Southern California</p>
-      <h1 class="hero-title">Enterprise‑Grade Logistics.<br>Local Partnership.</h1>
-      <p class="hero-sub">Moving Southern California’s products, materials, and supplies with reliability, precision, and care.</p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn btn-fs-modern me-2">Get a Quote</a>
-      </div>
-    </div>
-  </section>
-  
-  <section id="who" class="section-padding container">
-    <p class="section-kicker">Who We Are</p>
-    <h2 class="section-heading">Your Dedicated Logistics Partner</h2>
-    <p class="fs-muted">
-      Fleet Stride Logistics delivers enterprise-grade service with a local touch.<br>
-      Led by former Amazon Logistics and Oracle leaders, we combine world-class expertise and innovation for superior results.<br>
-      We’re not just here to move goods—we build lasting partnerships rooted in reliability, precision, and a proactive approach to your unique challenges.
-    </p>
-  </section>
-  
-  <section id="services" class="section-padding container">
-    <p class="section-kicker">What We Do</p>
-    <h2 class="section-heading">Flexible, High-Performance Logistics Solutions</h2>
-    <div class="row g-4 mt-3">
-      <div class="col-md-4">
-        <div class="fs-card">
-          <h4 class="fs-card-title">Box Trucks & Cargo Vans</h4>
-          <p class="fs-muted">Fast, reliable last-mile and regional delivery.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="fs-card">
-          <h4 class="fs-card-title">Construction Logistics</h4>
-          <p class="fs-muted">Timely runs for materials, equipment, and site support.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="fs-card">
-          <h4 class="fs-card-title">Pharmaceutical Transport</h4>
-          <p class="fs-muted">Secure, compliant, and on-time for sensitive goods.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="promise" class="section-padding container">
-    <p class="section-kicker">Our Promise</p>
-    <h2 class="section-heading">Why Partner With Us</h2>
-    <div class="row g-4 mt-3">
-      <div class="col-md-3">
-        <div class="fs-card">
-          <h5>Safety First</h5>
-          <p class="fs-muted">DOT-compliant, fully insured operations—your cargo is always protected.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="fs-card">
-          <h5>Reliability</h5>
-          <p class="fs-muted">Real-time tracking and transparent communication. We deliver on-time, every time.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="fs-card">
-          <h5>Efficiency</h5>
-          <p class="fs-muted">Data-driven routing and proactive logistics keep your supply chain one step ahead.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="fs-card">
-          <h5>True Partnership</h5>
-          <p class="fs-muted">We act as an extension of your team, measuring our success by yours.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="future" class="section-padding container">
-    <p class="section-kicker">Looking Ahead</p>
-    <h2 class="section-heading">Building the Next Generation of Logistics</h2>
-    <p class="fs-muted">We are expanding into construction support logistics and pharmaceutical transport to better serve our partners' evolving supply chain needs.</p>
-  </section>
-  
-  <section id="contact" class="section-padding container text-center">
-    <p class="section-kicker">Contact Us</p>
-    <h2 class="section-heading">Let's Work Together</h2>
-    <p class="fs-muted">
-      Fleet Stride LLC — dba Fleet Stride Logistics<br>
-      Orange County, CA<br>
-      Email: info@fleetstride.com
-    </p>
-  </section>
-  
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(110deg, #232839 0%, #38405c 80%, #2290ff 100%);
+}
+.fleet-road-svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 110px;
+  z-index: 2;
+  pointer-events: none;
+}
+.hero-content {
+  position: relative;
+  z-index: 3;
+}
 
 
 
