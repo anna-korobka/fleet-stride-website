@@ -236,9 +236,8 @@ h1, h2, h3, h4, h5, h6, p,
   z-index: 1;
   background:
     linear-gradient(110deg, #232839 0%, #38405c 80%, #2290ff 100%),
-    url('https://www.transparenttextures.com/patterns/noise.png');
-  background-size: cover, auto;
+    url('https://uploads-ssl.webflow.com/5b6df4181e51381c73a22579/5bb441ebb6d16b3a7c216d47_Noise.png');
+  background-size: cover, cover;
   background-blend-mode: overlay;
 }
-
 
