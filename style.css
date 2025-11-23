@@ -4,12 +4,10 @@ body {
   color: #fff !important;
   font-family: 'Inter', sans-serif;
 }
-
-/* Force white text for all headings, subheadings, and paragraphs */
+/* Force white text for headings, subheadings, and paragraphs (no global background reset) */
 h1, h2, h3, h4, h5, h6, p,
-.hero-title, .section-heading, .fs-card-title, .fs-muted, .section-kicker, .fs-card, .section-padding, section, .container {
+.hero-title, .section-heading, .fs-card-title, .fs-muted, .section-kicker, .fs-card, .section-padding {
   color: #fff !important;
-  background: none !important;
   border: none !important;
 }
 
@@ -89,7 +87,6 @@ h1, h2, h3, h4, h5, h6, p,
   justify-content: center;
   width: 100%;
 }
-
 /* Remove pill styles: just bold, uppercase orange text */
 .hero-pill {
   color: #ff9100 !important;
@@ -103,7 +100,6 @@ h1, h2, h3, h4, h5, h6, p,
   margin-bottom: 0.6rem;
   display: inline;
 }
-
 /* Primary CTA button */
 .btn-fs-modern {
   background: #ff6f00;
@@ -153,9 +149,9 @@ h1, h2, h3, h4, h5, h6, p,
 }
 .section-padding {
   padding: 2rem 0 2rem 0;
-  background: none !important;
   color: #fff !important;
 }
+
 .section-kicker {
   color: #1890ff !important;
   text-transform: uppercase;
@@ -163,7 +159,6 @@ h1, h2, h3, h4, h5, h6, p,
   font-size: 0.96rem;
   margin-bottom: 0.4em;
   font-weight: 600;
-  background: none !important;
   border: none !important;
 }
 .section-heading {
@@ -172,13 +167,11 @@ h1, h2, h3, h4, h5, h6, p,
   font-weight: 700;
   margin-bottom: 0.7rem;
   color: #fff !important;
-  background: none !important;
   border: none !important;
 }
 .fs-muted {
   color: #dbdbdb !important;
   font-size: 1.03rem;
-  background: none !important;
   border: none !important;
 }
 .row.g-4 {
@@ -203,7 +196,6 @@ h1, h2, h3, h4, h5, h6, p,
   font-weight: 700;
   margin-bottom: 0.32em;
   color: #fff !important;
-  background: none !important;
 }
 .fs-card:hover {
   box-shadow: 0 8px 26px #ff6f0021, 0 2px 8px #1890ff19;
@@ -224,7 +216,14 @@ h1, h2, h3, h4, h5, h6, p,
   .section-padding { padding: 1.2rem 0; }
   .fs-card { padding: 0.6rem 0.4rem 0.55rem 0.4rem; }
 }
+
+/* 
+// REMOVED - this would cause all text in any <section> to override color (not recommended)
 section * {
   color: #fff !important;
 }
-
+*/
+/* 
+// REMOVED - This would cause backgrounds to disappear from sections or containers
+// section, .container { background: none !important; }
+*/
