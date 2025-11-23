@@ -222,20 +222,17 @@ h1, h2, h3, h4, h5, h6, p,
   z-index: 1;
   background: linear-gradient(110deg, #232839 0%, #38405c 80%, #2290ff 100%);
 }
-
-/* The abstract fleet lineup at horizon */
-.fleet-minimal-svg {
+.fleet-obvious-svg {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100vw;
-  height: 128px;
+  height: 135px;
   z-index: 2;
   pointer-events: none;
 }
-
-/* Make sure hero content floats above foreground SVG */
 .hero-content {
   position: relative;
   z-index: 3;
 }
+
