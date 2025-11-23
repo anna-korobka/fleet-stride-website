@@ -217,19 +217,22 @@ h1, h2, h3, h4, h5, h6, p,
   .fs-card { padding: 0.6rem 0.4rem 0.55rem 0.4rem; }
 }
 
-/* 
-// REMOVED - this would cause all text in any <section> to override color (not recommended)
-section * {
-  color: #fff !important;
-}
-*/
-.hero-bg.frosted-radials {
+
+.hero-bg.speed-lines {
   position: absolute;
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(135deg, #242b34 0%, #1a2233 100%),
-    radial-gradient(ellipse at 70% 20%, #1890ff33 0%, transparent 75%),
-    radial-gradient(ellipse at 30% 85%, #ff910033 0%, transparent 80%);
-  backdrop-filter: blur(8px);
+    linear-gradient(120deg, #202633 0%, #323d4d 80%, #1890ff 100%),
+    repeating-linear-gradient(
+      100deg,
+      rgba(255,145,0,0.12) 0 2px,
+      transparent 2px 24px
+    ),
+    repeating-linear-gradient(
+      80deg,
+      rgba(24,144,255,0.11) 0 2px,
+      transparent 2px 34px
+    );
+  background-blend-mode: lighten;
 }
