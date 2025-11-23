@@ -230,5 +230,15 @@ h1, h2, h3, h4, h5, h6, p,
   .section-padding { padding: 1.2rem 0; }
   .fs-card { padding: 0.6rem 0.4rem 0.55rem 0.4rem; }
 }
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(110deg, #232839 0%, #38405c 80%, #2290ff 100%),
+    url('https://www.transparenttextures.com/patterns/noise.png');
+  background-size: cover, auto;
+  background-blend-mode: overlay;
+}
 
 
