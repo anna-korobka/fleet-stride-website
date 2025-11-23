@@ -1,24 +1,142 @@
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(110deg, #232839 0%, #38405c 80%, #2290ff 100%);
-}
-
-.fleet-road-svg {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 110px;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 3;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleet Stride Logistics</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top fs-nav">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#hero">Fleet Stride Logistics</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#who">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#promise">Why Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#future">Vision</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="hero" class="hero-section" style="position:relative; overflow:hidden;">
+    <div class="hero-bg"></div>
+    <!-- Minimal, Modern Fleet SVG Motif -->
+    <svg class="fleet-road-svg" width="100%" height="110" viewBox="0 0 820 110" aria-hidden="true" focusable="false" preserveAspectRatio="none">
+      <!-- Road -->
+      <rect x="60" y="80" width="700" height="18" rx="8" fill="#222a44" opacity="0.23"/>
+      <!-- Road markings -->
+      <rect x="120" y="88" width="28" height="3" rx="2" fill="#fff" opacity="0.13"/>
+      <rect x="220" y="88" width="40" height="3" rx="2" fill="#fff" opacity="0.17"/>
+      <rect x="370" y="88" width="40" height="3" rx="2" fill="#fff" opacity="0.12"/>
+      <rect x="520" y="88" width="40" height="3" rx="2" fill="#fff" opacity="0.17"/>
+      <rect x="610" y="88" width="40" height="3" rx="2" fill="#fff" opacity="0.14"/>
+      <!-- Vans as rectangles -->
+      <rect x="160" y="62" width="54" height="20" rx="4" fill="#fff" opacity="0.16"/>
+      <rect x="260" y="67" width="54" height="18" rx="4" fill="#2290ff" opacity="0.20"/>
+      <rect x="360" y="60" width="54" height="23" rx="4" fill="#fff" opacity="0.16"/>
+      <!-- Lead van (orange, slightly larger) -->
+      <rect x="470" y="54" width="58" height="30" rx="6" fill="#ff9100" opacity="0.75"/>
+      <rect x="485" y="78" width="28" height="2.3" rx="1" fill="#fff" opacity="0.18"/>
+    </svg>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-pill"><span></span> Orange County • Southern California</p>
+      <h1 class="hero-title">Enterprise‑Grade Logistics.<br>Local Partnership.</h1>
+      <p class="hero-sub">Moving Southern California’s products, materials, and supplies with reliability, precision, and care.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-fs-modern me-2">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+  <section id="who" class="section-padding container">
+    <p class="section-kicker">Who We Are</p>
+    <h2 class="section-heading">Your Dedicated Logistics Partner</h2>
+    <p class="fs-muted">
+      Fleet Stride Logistics delivers enterprise-grade service with a local touch.<br>
+      Led by former Amazon Logistics and Oracle leaders, we combine world-class expertise and innovation for superior results.<br>
+      We’re not just here to move goods—we build lasting partnerships rooted in reliability, precision, and a proactive approach to your unique challenges.
+    </p>
+  </section>
+  <section id="services" class="section-padding container">
+    <p class="section-kicker">What We Do</p>
+    <h2 class="section-heading">Flexible, High-Performance Logistics Solutions</h2>
+    <div class="row g-4 mt-3">
+      <div class="col-md-4">
+        <div class="fs-card">
+          <h4 class="fs-card-title">Box Trucks & Cargo Vans</h4>
+          <p class="fs-muted">Fast, reliable last-mile and regional delivery.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fs-card">
+          <h4 class="fs-card-title">Construction Logistics</h4>
+          <p class="fs-muted">Timely runs for materials, equipment, and site support.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="fs-card">
+          <h4 class="fs-card-title">Pharmaceutical Transport</h4>
+          <p class="fs-muted">Secure, compliant, and on-time for sensitive goods.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="promise" class="section-padding container">
+    <p class="section-kicker">Our Promise</p>
+    <h2 class="section-heading">Why Partner With Us</h2>
+    <div class="row g-4 mt-3">
+      <div class="col-md-3">
+        <div class="fs-card">
+          <h5>Safety First</h5>
+          <p class="fs-muted">DOT-compliant, fully insured operations—your cargo is always protected.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="fs-card">
+          <h5>Reliability</h5>
+          <p class="fs-muted">Real-time tracking and transparent communication. We deliver on-time, every time.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="fs-card">
+          <h5>Efficiency</h5>
+          <p class="fs-muted">Data-driven routing and proactive logistics keep your supply chain one step ahead.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="fs-card">
+          <h5>True Partnership</h5>
+          <p class="fs-muted">We act as an extension of your team, measuring our success by yours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="future" class="section-padding container">
+    <p class="section-kicker">Looking Ahead</p>
+    <h2 class="section-heading">Building the Next Generation of Logistics</h2>
+    <p class="fs-muted">We are expanding into construction support logistics and pharmaceutical transport to better serve our partners' evolving supply chain needs.</p>
+  </section>
+  <section id="contact" class="section-padding container text-center">
+    <p class="section-kicker">Contact Us</p>
+    <h2 class="section-heading">Let's Work Together</h2>
+    <p class="fs-muted">
+      Fleet Stride LLC — dba Fleet Stride Logistics<br>
+      Orange County, CA<br>
+      Email: info@fleetstride.com
+    </p>
+  </section>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
 
 
