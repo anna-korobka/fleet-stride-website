@@ -223,18 +223,13 @@ section * {
   color: #fff !important;
 }
 */
-.hero-bg.poly-route {
+.hero-bg.frosted-radials {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(135deg, #242b34 0%, #202633 100%);
-  overflow: hidden;
-}
-.banner-path-lines {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+  background:
+    linear-gradient(135deg, #242b34 0%, #1a2233 100%),
+    radial-gradient(ellipse at 70% 20%, #1890ff33 0%, transparent 75%),
+    radial-gradient(ellipse at 30% 85%, #ff910033 0%, transparent 80%);
+  backdrop-filter: blur(8px);
 }
