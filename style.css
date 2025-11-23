@@ -114,31 +114,30 @@ h1, h2, h3, h4, h5, h6, p,
 }
 /* Primary CTA button - even smaller and matches rest of text */
 .btn-fs-modern {
-  background: #ff6f00;
+  background: rgba(13,19,33,0.96);         /* Dark modern */
   color: #fff !important;
   border: none;
   border-radius: 18px;
-  font-family: 'Inter', sans-serif; /* match rest of your text */
-  font-weight: 500;
-  font-size: 1rem; /* exactly as .hero-sub and nav text */
-  letter-spacing: 0.02em;
-  padding: 0.32em 0.88em; /* tighter for smaller button */
-  box-shadow: 0 5px 12px 0 rgba(255,111,0,0.18),
-              0 1px 4px rgba(24,144,255,0.03);
-  transition: background 0.18s, color 0.16s, box-shadow 0.18s;
+  font-family: 'Montserrat', sans-serif;   /* Match headline font */
+  font-weight: 700;                        /* Bold to match */
+  font-size: 1.1rem;                       /* Slightly larger than body, much smaller than headline */
+  letter-spacing: -0.02em;                 /* Subtle tight spacing */
+  padding: 0.38em 1.35em;                  /* Compact size */
+  box-shadow: 0 4px 22px 0 #ff910030;
+  transition: background 0.17s, color 0.17s, box-shadow 0.19s;
   outline: none;
   text-shadow: none;
   opacity: 1 !important;
   pointer-events: auto;
   margin-top: 0.1em;
+  display: inline-block;
 }
 .btn-fs-modern:hover,
 .btn-fs-modern:focus,
 .btn-fs-modern:active {
-  background: #fff;
-  color: #ff6f00 !important;
-  box-shadow: 0 10px 22px 0 rgba(255,111,0,0.18),
-              0 2px 10px rgba(24,144,255,0.04);
+  background: #1a2233;
+  color: #ff9100 !important;
+  box-shadow: 0 10px 34px #ff910055;
 }
 /* Outlined secondary button */
 .btn-fs-outline {
@@ -231,3 +230,4 @@ h1, h2, h3, h4, h5, h6, p,
   .section-padding { padding: 1.2rem 0; }
   .fs-card { padding: 0.6rem 0.4rem 0.55rem 0.4rem; }
 }
+
