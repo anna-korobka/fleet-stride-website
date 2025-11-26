@@ -1,66 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fleet Stride Logistics</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
-  <header class="header">
-    <div class="logo">Fleet Stride Logistics</div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    <nav class="nav" id="nav">
-      <a href="#hero">Home</a>
-      <a href="#features">Features</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="container">
+    <!-- Navigation -->
+    <header class="nav">
+      <a class="brand" href="#top">Fleet Stride</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#future">Future</a>
+        <a href="#contacts">Contacts</a>
+      </nav>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <p class="location">Orange County • Southern California</p>
-    <h1>Enterprise-Grade Logistics. <br>Local Partnership.</h1>
-    <p class="subtext">Moving your products, materials, and supplies with reliability statewide and beyond.</p>
-    <a href="mailto:info@fleetstride.com" class="cta">Get a Quote</a>
-  </section>
+    <!-- Hero -->
+    <section id="top" class="hero">
+      <div class="region">Orange County • Southern California</div>
+      <h1>Enterprise-Grade Logistics.<br>Local Partnership.</h1>
+      <p class="subtitle">
+        Moving your products, materials, and supplies with reliability statewide and beyond.
+      </p>
+      <a class="quote-btn" href="#contacts">Get a Quote</a>
+    </section>
 
-  <!-- Features Section -->
-  <section class="features" id="features">
-    <h2>Who We Are</h2>
-    <p class="intro">Your Trusted Logistics Partner<br>
-    Fleet Stride Logistics delivers enterprise-grade service with a local touch. Led by former Amazon Logistics and Oracle leaders, we understand intricate supply chain operations.</p>
+    <!-- Content -->
+    <main class="content" id="about">
+      <section>
+        <p class="section-header">WHO WE ARE</p>
+        <h2>Your Trusted Logistics Partner</h2>
+        <p class="desc">
+          Fleet Stride Logistics delivers enterprise-grade service with a local touch. Led by former Amazon Logistics and Oracle leaders, we understand intricate supply chain operations.
+        </p>
 
-    <div class="cards">
-      <div class="card blue">
-        <h3>Efficiency</h3>
-        <p>Data-driven routing and proactive logistics keep your supply chain one step ahead.</p>
-      </div>
-      <div class="card orange">
-        <h3>True Partnership</h3>
-        <p>We act as an extension of your team, measuring our success by yours.</p>
-      </div>
-    </div>
-  </section>
+        <div class="features">
+          <article class="feature feature-efficiency">
+            <h3>Efficiency</h3>
+            <p>Data-driven routing and proactive logistics keep your supply chain one step ahead.</p>
+          </article>
 
-  <!-- Looking Ahead Section -->
-  <section class="looking-ahead">
-    <h2>Looking Ahead</h2>
-    <p>Building the Next Generation of Logistics<br>
-    We are expanding into construction support logistics and pharmaceutical transport to better serve our partners' evolving supply chain needs.</p>
-  </section>
+          <article class="feature feature-partnership">
+            <h3>True Partnership</h3>
+            <p>We act as an extension of your team, measuring our success by yours.</p>
+          </article>
+        </div>
+      </section>
 
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2>Let's Work Together</h2>
-    <p>Fleet Stride LLC — dba Fleet Stride Logistics<br>
-       Orange County, CA<br>
-       Email: <a href="mailto:info@fleetstride.com">info@fleetstride.com</a>
-    </p>
-    <a href="mailto:info@fleetstride.com" class="cta">Get in Touch</a>
-  </section>
+      <section id="future">
+        <p class="section-header">LOOKING AHEAD</p>
+        <h2>Building the Next Generation of Logistics</h2>
+        <p class="desc">
+          We are expanding into construction support logistics and pharmaceutical transport to better serve our partners' evolving supply chain needs.
+        </p>
+      </section>
 
-  <script src="script.js"></script>
+      <section id="contacts" class="contacts">
+        <p class="section-header">LET'S WORK TOGETHER</p>
+        <h2>Contact</h2>
+        <p class="desc">
+          Fleet Stride LLC — dba Fleet Stride Logistics<br>
+          Orange County, CA<br>
+          Email: <a href="mailto:info@fleetstride.com">info@fleetstride.com</a>
+        </p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
