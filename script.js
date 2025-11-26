@@ -5,3 +5,4 @@ const nav = document.getElementById('nav');
 menuToggle.addEventListener('click', () => {
   nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
 });
+
