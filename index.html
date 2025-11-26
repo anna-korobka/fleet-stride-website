@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fleet Stride Logistics</title>
 
-  <!-- Modern premium font -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Nav -->
-  <header class="nav">
+  <!-- Top Nav (brand left, links right) -->
+  <header class="nav" id="top">
     <div class="wrap nav-inner">
       <a class="brand" href="#top">Fleet Stride</a>
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="primary">
         <a href="#about" class="nav-link">About</a>
         <a href="#whyus" class="nav-link">Why Us</a>
         <a href="#vision" class="nav-link">Vision</a>
@@ -24,10 +23,10 @@
   </header>
 
   <!-- Hero -->
-  <section id="top" class="hero">
+  <section class="hero">
     <div class="wrap">
       <p class="region">Orange County • Southern California</p>
-      <h1>Enterprise-Grade Logistics.<br>Local Partnership.</h1>
+      <h1>Enterprise‑Grade Logistics.<br>Local Partnership.</h1>
       <p class="subtitle">
         Moving your products, materials, and supplies with reliability statewide and beyond.
       </p>
@@ -42,18 +41,18 @@
         <p class="kicker">WHO WE ARE</p>
         <h2>Your Trusted Logistics Partner</h2>
         <p class="lead">
-          Fleet Stride Logistics delivers enterprise-grade service with a local touch. Led by former Amazon Logistics and Oracle leaders, we understand intricate supply chain operations.
+          Fleet Stride Logistics delivers enterprise‑grade service with a local touch. Led by former Amazon Logistics and Oracle leaders, we understand intricate supply chain operations.
         </p>
       </div>
     </section>
 
-    <!-- Why Us (features) -->
+    <!-- Why Us -->
     <section id="whyus" class="section">
       <div class="wrap">
         <div class="features">
           <article class="card card-eff">
             <h3>Efficiency</h3>
-            <p>Data-driven routing and proactive logistics keep your supply chain one step ahead.</p>
+            <p>Data‑driven routing and proactive logistics keep your supply chain one step ahead.</p>
           </article>
 
           <article class="card card-warm">
@@ -88,17 +87,5 @@
       </div>
     </section>
   </main>
-
-  <!-- Optional iOS viewport helper -->
-  <script>
-    (function fixIOSvh(){
-      const set = () => {
-        const vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', vh + 'px');
-      };
-      set(); addEventListener('resize', set, {passive:true});
-    })();
-  </script>
 </body>
 </html>
-
