@@ -1,2 +1,7 @@
-// Smooth scroll or animations can be added here
-console.log('Fleet Stride site loaded');
+// Toggle mobile menu
+const menuToggle = document.getElementById('menu-toggle');
+const nav = document.getElementById('nav');
+
+menuToggle.addEventListener('click', () => {
+  nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+});
