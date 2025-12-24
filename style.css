@@ -142,24 +142,33 @@ h2{ margin:.1em 0 .45em; font-size:clamp(22px,2.4vw,30px); font-weight:800; }
   .features{ grid-template-columns:1fr; } /* stack if extremely narrow */
 }
 .footer {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   text-align: center;
-  background: linear-gradient(180deg, #0b0b2c, #1f0f3d); /* matches your dark background */
+  background: linear-gradient(180deg, #0b0b2c, #1f0f3d);
   color: #fff;
+}
+
+.footer .footer-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space between text and icons */
 }
 
 .footer .social-links {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
+  gap: 1rem;
 }
 
 .footer .social-links a svg {
-  width: 28px; /* slightly larger */
-  height: 28px;
-  fill: #fff; /* white for contrast */
-  transition: all 0.3s ease;
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  transition: fill 0.3s ease;
 }
 
 .footer .social-links a:hover svg {
@@ -167,8 +176,9 @@ h2{ margin:.1em 0 .45em; font-size:clamp(22px,2.4vw,30px); font-weight:800; }
 }
 
 .footer .social-links a.instagram:hover svg {
-  fill: #e1306c; /* Instagram pink hover */
+  fill: #e1306c; /* Instagram hover */
 }
+
 
 
 
