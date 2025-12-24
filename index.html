@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fleet Stride Logistics</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -12,7 +11,11 @@
   <!-- Top Nav (brand left, links right) -->
   <header class="nav" id="top">
     <div class="wrap nav-inner">
-      <a class="brand" href="#top">Fleet Stride</a>
+      <a class="brand" href="#top">
+        Fleet Stride
+        <!-- For logo image instead of text, use: -->
+        <!-- <img src="images/logo_transp.png" alt="Fleet Stride Logistics Logo" class="logo" style="height:40px; vertical-align:middle;" /> -->
+      </a>
       <nav class="nav-links" aria-label="primary">
         <a href="#about" class="nav-link">About</a>
         <a href="#whyus" class="nav-link">Why Us</a>
@@ -21,7 +24,6 @@
       </nav>
     </div>
   </header>
-
   <!-- Hero -->
   <section class="hero">
     <div class="wrap">
@@ -33,7 +35,6 @@
       <a class="btn-cta" href="#contact" role="button">Get a Quote</a>
     </div>
   </section>
-
   <main>
     <!-- About -->
     <section id="about" class="section">
@@ -45,7 +46,6 @@
         </p>
       </div>
     </section>
-
     <!-- Why Us -->
     <section id="whyus" class="section">
       <div class="wrap">
@@ -54,7 +54,6 @@
             <h3>Efficiency</h3>
             <p>Data‑driven routing and proactive logistics keep your supply chain one step ahead.</p>
           </article>
-
           <article class="card card-warm">
             <h3>True Partnership</h3>
             <p>We act as an extension of your team, measuring our success by yours.</p>
@@ -62,7 +61,6 @@
         </div>
       </div>
     </section>
-
     <!-- Vision -->
     <section id="vision" class="section">
       <div class="wrap">
@@ -73,7 +71,6 @@
         </p>
       </div>
     </section>
-
     <!-- Contact -->
     <section id="contact" class="section">
       <div class="wrap">
@@ -87,30 +84,24 @@
       </div>
     </section>
   </main>
-
-<!-- Footer with Social Links -->
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <div class="footer-content">
-      <p>&copy; 2025 Fleet Stride Logistics. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/company/fleetstride" target="_blank" aria-label="LinkedIn">
-          <!-- LinkedIn SVG Icon -->
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6C1.12 6 0 4.88 0 3.5C0 2.12 1.12 1 2.5 1C3.87 1 4.98 2.12 4.98 3.5ZM0.5 8H4.5V24H0.5V8ZM8.5 8H12.2V10H12.3C12.9 8.8 14.4 7.5 16.5 7.5C21.2 7.5 22 10.5 22 15.1V24H18V15.9C18 13.4 17.9 10.6 14.5 10.6C11 10.6 10.7 13 10.7 15.7V24H6.7V8H8.5Z"/>
-          </svg>
-        </a>
-        <a href="https://www.instagram.com/fleetstride.logistics" target="_blank" aria-label="Instagram">
-          <!-- Instagram SVG Icon -->
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2.2C6.4 2.2 2.2 6.4 2.2 12C2.2 17.6 6.4 21.8 12 21.8C17.6 21.8 21.8 17.6 21.8 12C21.8 6.4 17.6 2.2 12 2.2ZM12 19.5C7.6 19.5 4.5 16.4 4.5 12C4.5 7.6 7.6 4.5 12 4.5C16.4 4.5 19.5 7.6 19.5 12C19.5 16.4 16.4 19.5 12 19.5ZM17 7C16.45 7 16 6.55 16 6C16 5.45 16.45 5 17 5C17.55 5 18 5.45 18 6C18 6.55 17.55 7 17 7ZM12 7C9.24 7 7 9.24 7 12C7 14.76 9.24 17 12 17C14.76 17 17 14.76 17 12C17 9.24 14.76 7 12 7ZM12 15C10.35 15 9 13.65 9 12C9 10.35 10.35 9 12 9C13.65 9 15 10.35 15 12C15 13.65 13.65 15 12 15Z"/>
-          </svg>
-        </a>
-      </div>
+  
+  <!-- Footer: copyright & icons on the same line -->
+  <footer class="footer">
+    <div class="wrap footer-inline">
+      <span>&copy; 2025 Fleet Stride Logistics. All rights reserved.</span>
+      <a href="https://www.linkedin.com/company/fleetstride" target="_blank" aria-label="LinkedIn">
+        <!-- LinkedIn SVG Icon -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6C1.12 6 0 4.88 0 3.5C0 2.12 1.12 1 2.5 1C3.87 1 4.98 2.12 4.98 3.5ZM0.5 8H4.5V24H0.5V8ZM8.5 8H12.2V10H12.3C12.9 8.8 14.4 7.5 16.5 7.5C21.2 7.5 22 10.5 22 15.1V24H18V15.9C18 13.4 17.9 10.6 14.5 10.6C11 10.6 10.7 13 10.7 15.7V24H6.7V8H8.5Z"/>
+        </svg>
+      </a>
+    <a href="https://www.instagram.com/fleetstride.logistics" class="instagram" target="_blank" aria-label="Instagram">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <rect x="2" y="2" width="20" height="20" rx="6" fill="currentColor"/>
+    <path fill="#fff" d="M12 7.2a4.8 4.8 0 100 9.6 4.8 4.8 0 000-9.6zm0 7.8a3 3 0 110-6 3 3 0 010 6zm5-8.05a1.15 1.15 0 11-2.3 0 1.15 1.15 0 012.3 0z"/>
+  </svg>
+</a>
     </div>
-  </div>
-</footer>
-
-
-
-
+  </footer>
+</body>
+</html>
