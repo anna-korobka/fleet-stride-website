@@ -16,7 +16,6 @@
   --space-vert: clamp(16px, 3.2vw, 28px);
   --space-gap: clamp(10px, 1.6vw, 14px);
 }
-
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -60,88 +59,74 @@ body {
 .nav-link:hover { color: var(--kicker); }
 .nav-link:focus-visible { outline: 0; box-shadow: 0 0 0 3px rgba(255,255,255,.25), 0 0 0 6px rgba(61,136,255,.45); }
 
-/* HERO */
+/* HERO (Brighter & More Vibrant) */
 .hero {
-  background: linear-gradient(125deg, var(--navy-800) 65%, var(--blue-500) 130%);
-  border-bottom-left-radius: var(--r-hero);
-  border-bottom-right-radius: var(--r-hero);
-  padding: calc(var(--space-vert) + env(safe-area-inset-top,0px)) 0 var(--space-vert);
-  text-align: center;
-}
-.region {
-  color: var(--region) !important;
-  font-weight: 800; letter-spacing: .02em;
-  margin: 2px 0 8px; font-size: clamp(13px,2.1vw,18px);
-}
-.hero h1 {
-  margin: 0 0 10px; font-weight: 800; line-height: 1.1;
-  font-size: clamp(28px,5vw,52px);
-}
-.subtitle {
-  color: var(--soft); margin: 0 auto 14px; max-width: 46ch;
-  font-size: clamp(14px,2vw,18px); line-height: 1.5;
-}
-/* Hero full-width transparent background image overlay */
-.hero {
-  /* Existing gradient as a fallback, then background image overlay on top */
   position: relative;
   overflow: hidden;
-  background: linear-gradient(125deg, var(--navy-800) 65%, var(--blue-500) 130%);
+  background: #f7faff; /* Use a very light background as default */
   border-bottom-left-radius: var(--r-hero);
   border-bottom-right-radius: var(--r-hero);
   padding: calc(var(--space-vert) + env(safe-area-inset-top,0px)) 0 var(--space-vert);
   text-align: center;
 }
 
+/* Hero background image - now much more visible, brighter, and more colorful */
 .hero-bg {
   position: absolute;
   inset: 0;
   background: url('background.png') center center / cover no-repeat;
-  opacity: 0.17;   /* Adjust this value for more or less transparency */
+  opacity: 0.55;   /* More visible! Tweak between .4 and .7 for your perfect look */
+  filter: brightness(1.08) contrast(1.12) saturate(1.13);
   z-index: 1;
   pointer-events: none;
-  will-change: opacity;
-  transition: opacity 0.3s;
+  will-change: opacity, filter;
+  transition: opacity 0.3s, filter .2s;
 }
 
-/* Ensure hero text stays above the bg image */
-.hero-foreground {
-  position: relative;
+/* Subtle white gradient on top only for text clarity without darkening the image */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.12) 100%);
   z-index: 2;
+  pointer-events: none;
 }
 
-/* Stronger text shadow for h1 improves readability on image background */
+/* Ensure hero text stays above image/gradient overlay */
+.hero > .wrap, .hero-foreground {
+  position: relative;
+  z-index: 3;
+}
+
 .hero h1 {
   margin: 0 0 10px;
   font-weight: 800;
   line-height: 1.1;
   font-size: clamp(28px,5vw,52px);
-  text-shadow: 0 2px 18px rgba(0,0,0,0.20);
+  text-shadow: 0 3px 18px rgba(0,0,0,0.13);
 }
 
-/* Subtitle also more readable */
 .subtitle {
   color: var(--soft);
   margin: 0 auto 14px;
   max-width: 46ch;
   font-size: clamp(14px,2vw,18px);
   line-height: 1.5;
-  text-shadow: 0 1px 9px rgba(0,0,0,0.13);
-}
-
-/* Optional: for even better text clarity on busy images */
-.hero-foreground {
-  background: linear-gradient(180deg,rgba(9,14,34,0.25) 40%,rgba(10,24,51,0.10) 100%);
-  border-radius: var(--r-hero);
-  padding: 2vw 0 2vw 0;
+  text-shadow: 0 1px 7px rgba(0,0,0,0.09);
 }
 
 /* Responsive: ensure bg scales nicely on mobile */
 @media (max-width: 650px) {
-  .hero-bg {
-    background-position: 60% 40%;
-  }
+  .hero-bg { background-position: 60% 40%; }
 }
+.region {
+  color: var(--region) !important;
+  font-weight: 800; letter-spacing: .02em;
+  margin: 2px 0 8px; font-size: clamp(13px,2.1vw,18px);
+}
+
+/* ======= END HERO ======= */
 
 /* CTA */
 .btn-cta, .btn-cta:link, .btn-cta:visited {
@@ -149,13 +134,13 @@ body {
   text-decoration: none; color: #fff; font-weight: 800;
   border-radius: 14px;
   padding: clamp(10px,2vw,14px) clamp(24px,3.6vw,36px);
-  background: #2b5bd3;
+  background: #2970FF;
   border: 1px solid rgba(255,255,255,.08);
   box-shadow: 0 6px 16px rgba(30,60,150,.22);
   font-size: clamp(16px,2vw,19px);
   transition: transform .08s ease, box-shadow .2s ease, background .2s ease;
 }
-.btn-cta:hover { background: #2e64e6; box-shadow: 0 8px 18px rgba(30,60,150,.28); }
+.btn-cta:hover { background: #4181ff; box-shadow: 0 8px 18px rgba(30,60,150,.28); }
 .btn-cta:active { transform: translateY(1px); }
 .btn-cta:focus-visible { outline: 0; box-shadow: 0 0 0 3px rgba(255,255,255,.25), 0 0 0 6px rgba(61,136,255,.45); }
 
@@ -228,6 +213,15 @@ h2 { margin: .1em 0 .45em; font-size: clamp(22px,2.4vw,30px); font-weight: 800; 
   stroke: var(--footer-link-hover);
 }
 
+/* Social icons always horizontal even on mobile */
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  justify-content: center;
+  width: 100%;
+}
+
 /* Modern email in contact area */
 .email-modern {
   color: var(--blue-500);
@@ -275,5 +269,3 @@ h2 { margin: .1em 0 .45em; font-size: clamp(22px,2.4vw,30px); font-weight: 800; 
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-
-
