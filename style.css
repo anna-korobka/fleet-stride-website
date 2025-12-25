@@ -1,5 +1,4 @@
 :root{
-  /* Brand palette */
   --navy-900:#0C133A;
   --navy-800:#0d153a;
   --blue-500:#278adf;
@@ -10,7 +9,6 @@
   --kicker:#4986da;
   --footer-link:#ced6e0;
   --footer-link-hover:#278adf;
-  /* Rounding + spacing */
   --r-hero:20px;
   --r-card:16px;
   --space-vert: clamp(16px, 3.2vw, 28px);
@@ -28,7 +26,6 @@ body {
     var(--navy-900);
 }
 .wrap { width: min(1000px, 92vw); margin: 0 auto; }
-
 /* NAV */
 .nav {
   position: sticky; top: 0; z-index: 20;
@@ -59,98 +56,94 @@ body {
 .nav-link:hover { color: var(--kicker); }
 .nav-link:focus-visible { outline: 0; box-shadow: 0 0 0 3px rgba(255,255,255,.25), 0 0 0 6px rgba(61,136,255,.45); }
 
-/* HERO (Brighter & More Vibrant) */
+/* ======= PREMIUM HERO ======= */
 .hero {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(105deg, #f7faff 60%, #278adf 100%);
+  background: linear-gradient(108deg, #EBF3FF 0%, #C5D7F6 80%, #278adf 100%);
   border-bottom-left-radius: var(--r-hero);
   border-bottom-right-radius: var(--r-hero);
   padding: calc(var(--space-vert) + env(safe-area-inset-top,0px)) 0 var(--space-vert);
   text-align: center;
 }
-
-/* Hero background image - now much more visible, brighter, and more colorful */
+/* Premium: hero image subdued but crisp, not washed out or too dark */
 .hero-bg {
   position: absolute;
   inset: 0;
   background: url('background.png') center center / cover no-repeat;
-  opacity: 0.37; /* Try between 0.30 and 0.42 for your taste */
-  filter: brightness(1.0) contrast(1.07) saturate(1.05);
+  opacity: 0.27;
+  filter: contrast(1.11) saturate(1.13) brightness(1.03);
   z-index: 1;
   pointer-events: none;
   will-change: opacity, filter;
   transition: opacity 0.3s, filter 0.2s;
 }
+/* Gentle "glass" overlay for crispness—modern, premium feel */
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  /* Optional: subtle navy/blue overlay for vibrancy & legibility */
-  background: linear-gradient(115deg, rgba(18,35,96,0.07), rgba(39,138,223,0.18) 100%);
+  background: linear-gradient(112deg, rgba(255,255,255,0.20) 50%, rgba(39,138,223,0.07) 100%);
   z-index: 2;
   pointer-events: none;
 }
-/* Subtle white gradient on top only for text clarity without darkening the image */
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg,rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.12) 100%);
-  z-index: 2;
-  pointer-events: none;
-}
-
-/* Ensure hero text stays above image/gradient overlay */
-.hero > .wrap, .hero-foreground {
+/* Hero text above overlays */
+.hero > .wrap {
   position: relative;
   z-index: 3;
 }
-
 .hero h1 {
   margin: 0 0 10px;
   font-weight: 800;
   line-height: 1.1;
   font-size: clamp(28px,5vw,52px);
-  text-shadow: 0 3px 18px rgba(0,0,0,0.13);
+  color: #1e2749;
+  text-shadow: 0 3px 20px rgba(80,110,180,0.08), 0 0px 1px rgba(255,255,255,0.27);
 }
-
 .subtitle {
-  color: var(--soft);
+  color: #375892;
   margin: 0 auto 14px;
   max-width: 46ch;
   font-size: clamp(14px,2vw,18px);
   line-height: 1.5;
-  text-shadow: 0 1px 7px rgba(0,0,0,0.09);
+  text-shadow: 0 1px 8px rgba(39,120,223,0.05);
 }
-
-/* Responsive: ensure bg scales nicely on mobile */
-@media (max-width: 650px) {
-  .hero-bg { background-position: 60% 40%; }
+.hero-location-badge {
+  display: inline-block;
+  color: #2970FF;
+  background: rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 2px 13px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 12px rgba(41,112,255,0.08);
 }
-.region {
-  color: var(--region) !important;
-  font-weight: 800; letter-spacing: .02em;
-  margin: 2px 0 8px; font-size: clamp(13px,2.1vw,18px);
-}
-
-/* ======= END HERO ======= */
-
-/* CTA */
+/* CTA Button—premium pop */
 .btn-cta, .btn-cta:link, .btn-cta:visited {
   display: inline-flex; align-items: center; justify-content: center;
-  text-decoration: none; color: #fff; font-weight: 800;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
   border-radius: 14px;
   padding: clamp(10px,2vw,14px) clamp(24px,3.6vw,36px);
-  background: #2970FF;
-  border: 1px solid rgba(255,255,255,.08);
-  box-shadow: 0 6px 16px rgba(30,60,150,.22);
+  background: linear-gradient(90deg, #2970FF 60%, #5daaff 100%);
+  border: none;
+  box-shadow: 0 6px 24px rgba(41,112,255,0.11);
   font-size: clamp(16px,2vw,19px);
-  transition: transform .08s ease, box-shadow .2s ease, background .2s ease;
+  transition: transform .08s, box-shadow .2s, background .2s;
 }
-.btn-cta:hover { background: #4181ff; box-shadow: 0 8px 18px rgba(30,60,150,.28); }
-.btn-cta:active { transform: translateY(1px); }
-.btn-cta:focus-visible { outline: 0; box-shadow: 0 0 0 3px rgba(255,255,255,.25), 0 0 0 6px rgba(61,136,255,.45); }
+.btn-cta:hover {
+  background: linear-gradient(90deg, #4289FF 60%, #7ecbfd 100%);
+  box-shadow: 0 10px 28px rgba(41,112,255,0.16);
+}
+.btn-cta:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(41,112,255,0.22);
+}
+/* ======= END HERO ======= */
 
 /* Sections */
 .section { padding: var(--space-vert) 0; }
@@ -265,18 +258,3 @@ h2 { margin: .1em 0 .45em; font-size: clamp(22px,2.4vw,30px); font-weight: 800; 
     width: 100%;
   }
 }
-.hero-location-badge {
-  display: inline-block;
-  color: var(--blue-500);
-  background: rgba(255,255,255,0.08);
-  border-radius: 12px;
-  padding: 2px 11px;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.07em;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-
-
