@@ -63,7 +63,7 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-  background: #f7faff; /* Use a very light background as default */
+  background: linear-gradient(105deg, #f7faff 60%, #278adf 100%);
   border-bottom-left-radius: var(--r-hero);
   border-bottom-right-radius: var(--r-hero);
   padding: calc(var(--space-vert) + env(safe-area-inset-top,0px)) 0 var(--space-vert);
@@ -75,14 +75,22 @@ body {
   position: absolute;
   inset: 0;
   background: url('background.png') center center / cover no-repeat;
-  opacity: 0.7;   /* More visible! Tweak between .4 and .7 for your perfect look */
-  filter: brightness(0.8) contrast(1) saturate(1.00);
+  opacity: 0.37; /* Try between 0.30 and 0.42 for your taste */
+  filter: brightness(1.0) contrast(1.07) saturate(1.05);
   z-index: 1;
   pointer-events: none;
   will-change: opacity, filter;
-  transition: opacity 0.3s, filter .2s;
+  transition: opacity 0.3s, filter 0.2s;
 }
-
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* Optional: subtle navy/blue overlay for vibrancy & legibility */
+  background: linear-gradient(115deg, rgba(18,35,96,0.07), rgba(39,138,223,0.18) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
 /* Subtle white gradient on top only for text clarity without darkening the image */
 .hero::after {
   content: "";
@@ -269,5 +277,6 @@ h2 { margin: .1em 0 .45em; font-size: clamp(22px,2.4vw,30px); font-weight: 800; 
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+
 
 
