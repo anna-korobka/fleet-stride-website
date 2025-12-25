@@ -81,6 +81,67 @@ body {
   color: var(--soft); margin: 0 auto 14px; max-width: 46ch;
   font-size: clamp(14px,2vw,18px); line-height: 1.5;
 }
+/* Hero full-width transparent background image overlay */
+.hero {
+  /* Existing gradient as a fallback, then background image overlay on top */
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(125deg, var(--navy-800) 65%, var(--blue-500) 130%);
+  border-bottom-left-radius: var(--r-hero);
+  border-bottom-right-radius: var(--r-hero);
+  padding: calc(var(--space-vert) + env(safe-area-inset-top,0px)) 0 var(--space-vert);
+  text-align: center;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url('background.png') center center / cover no-repeat;
+  opacity: 0.17;   /* Adjust this value for more or less transparency */
+  z-index: 1;
+  pointer-events: none;
+  will-change: opacity;
+  transition: opacity 0.3s;
+}
+
+/* Ensure hero text stays above the bg image */
+.hero-foreground {
+  position: relative;
+  z-index: 2;
+}
+
+/* Stronger text shadow for h1 improves readability on image background */
+.hero h1 {
+  margin: 0 0 10px;
+  font-weight: 800;
+  line-height: 1.1;
+  font-size: clamp(28px,5vw,52px);
+  text-shadow: 0 2px 18px rgba(0,0,0,0.20);
+}
+
+/* Subtitle also more readable */
+.subtitle {
+  color: var(--soft);
+  margin: 0 auto 14px;
+  max-width: 46ch;
+  font-size: clamp(14px,2vw,18px);
+  line-height: 1.5;
+  text-shadow: 0 1px 9px rgba(0,0,0,0.13);
+}
+
+/* Optional: for even better text clarity on busy images */
+.hero-foreground {
+  background: linear-gradient(180deg,rgba(9,14,34,0.25) 40%,rgba(10,24,51,0.10) 100%);
+  border-radius: var(--r-hero);
+  padding: 2vw 0 2vw 0;
+}
+
+/* Responsive: ensure bg scales nicely on mobile */
+@media (max-width: 650px) {
+  .hero-bg {
+    background-position: 60% 40%;
+  }
+}
 
 /* CTA */
 .btn-cta, .btn-cta:link, .btn-cta:visited {
@@ -203,3 +264,4 @@ h2 { margin: .1em 0 .45em; font-size: clamp(22px,2.4vw,30px); font-weight: 800; 
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+
