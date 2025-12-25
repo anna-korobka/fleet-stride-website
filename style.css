@@ -75,7 +75,7 @@ body {
   position: absolute;
   inset: 0;
   background: url('background.png') center center / cover no-repeat;
-  opacity: 0.4;   /* More visible! Tweak between .4 and .7 for your perfect look */
+  opacity: 0.7;   /* More visible! Tweak between .4 and .7 for your perfect look */
   filter: brightness(0.8) contrast(1) saturate(1.00);
   z-index: 1;
   pointer-events: none;
@@ -269,4 +269,5 @@ h2 { margin: .1em 0 .45em; font-size: clamp(22px,2.4vw,30px); font-weight: 800; 
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+
 
