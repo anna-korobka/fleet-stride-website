@@ -1,215 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical & Pharma Delivery in Irvine | Fleet Stride</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical & Pharma Delivery in Irvine | Fleet Stride Logistics</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../logo_transp.png">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="logo.png">
 
-    <link rel="stylesheet" href="../style.css">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            color: #1e293b;
-            line-height: 1.6;
-            background: #f8fafc;
-        }
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        color: #1e293b;
+        line-height: 1.6;
+        background: #f8fafc;
+    }
 
-        /* Logo */
-        .logo {
-            display: block;
-            max-width: 180px;
-            margin: 20px auto;
-        }
+    /* Logo */
+    .logo {
+        display: block;
+        max-width: 180px;
+        margin: 20px auto;
+    }
 
-        /* Hero section */
-        .hero {
-            padding: 60px 20px 80px 20px;
-            text-align: center;
-            background: linear-gradient(135deg, #c3dafe, #e0e7ff);
-            border-radius: 0 0 30px 30px;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 1.25rem;
-            max-width: 700px;
-            margin: 0 auto 30px auto;
-        }
-        .hero a {
-            display: inline-block;
-            padding: 18px 40px;
-            background-color: #4f46e5;
-            color: white;
-            font-weight: 600;
-            border-radius: 12px;
-            text-decoration: none;
-            box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-        .hero a:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 25px rgba(79, 70, 229, 0.5);
-        }
-        .phone-number {
-            margin-top: 10px;
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
+    /* Hero section */
+    .hero {
+        padding: 60px 20px 80px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #c3dafe, #e0e7ff);
+        border-radius: 0 0 30px 30px;
+    }
+    .hero h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .hero p {
+        font-size: 1.25rem;
+        max-width: 700px;
+        margin: 0 auto 20px auto;
+    }
+    .hero .hero-sub {
+        font-size: 1rem;
+        color: #334155;
+        margin-bottom: 30px;
+    }
+    .hero .cta-button {
+        display: inline-block;
+        padding: 18px 40px;
+        background-color: #4f46e5;
+        color: white;
+        font-weight: 600;
+        border-radius: 12px;
+        text-decoration: none;
+        box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
+        transition: all 0.3s ease;
+        margin-bottom: 10px;
+    }
+    .hero .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 25px rgba(79, 70, 229, 0.5);
+    }
+    .hero .phone-number {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
 
-        /* Section styling */
-        section {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 40px;
-            text-align: center;
-        }
+    /* Sections */
+    section {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+        text-align: center;
+    }
 
-        /* Card/list style for blocks */
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 30px;
-        }
-        .card {
-            background: white;
-            padding: 25px 20px;
-            border-radius: 16px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-        }
+    /* Cards grid */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 30px;
+    }
+    .card {
+        background: white;
+        padding: 25px 20px;
+        border-radius: 16px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+    .card img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+    .card h3 {
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    .card p {
+        margin: 0;
+        font-size: 1rem;
+        color: #475569;
+    }
 
-        .card h3 {
-            margin-bottom: 15px;
-            font-size: 1.25rem;
-            font-weight: 600;
-        }
-        .card p {
-            margin: 0;
-            font-size: 1rem;
-            color: #475569;
-        }
+    /* How it works */
+    .how ol {
+        padding-left: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
 
-        /* How it works */
-        .how ol {
-            padding-left: 20px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
+    /* CTA Close */
+    .close {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .close .cta-button {
+        margin-bottom: 10px;
+    }
+    .close .phone-number {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
 
-        /* CTA Close */
-        .close {
-            text-align: center;
-        }
-        .close a {
-            display: inline-block;
-            padding: 18px 40px;
-            background-color: #4f46e5;
-            color: white;
-            font-weight: 600;
-            border-radius: 12px;
-            text-decoration: none;
-            box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
-            transition: all 0.3s ease;
-        }
-        .close a:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 25px rgba(79, 70, 229, 0.5);
-        }
-        .close .phone-number {
-            margin-top: 8px;
-        }
-    </style>
+    /* Mobile adjustments */
+    @media(max-width:600px){
+        .hero h1 { font-size:2.2rem; }
+        .cards { grid-template-columns: 1fr; }
+    }
+</style>
 </head>
 <body>
-    <main class="landing-page">
 
-        <!-- Logo -->
-        <img src="../logo_transp.png" alt="Fleet Stride Logo" class="logo">
+<main class="landing-page">
 
-        <!-- Hero -->
-        <section class="hero">
-            <h1>Medical & Pharma Delivery in Irvine</h1>
-            <p>Reliable same-day and scheduled medical deliveries for labs, clinics, and pharmacies across Orange County.</p>
-            <a href="mailto:fleetstride@gmail.com?subject=Free%20Trial%20Delivery">Book a Free Trial Delivery</a>
-            <div class="phone-number">800-999-4456</div>
-        </section>
+    <!-- Logo -->
+    <img src="logo.png" alt="Fleet Stride Logistics Logo" class="logo">
 
-        <!-- Who we serve -->
-        <section class="who">
-            <h2>We work with:</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Medical Clinics</h3>
-                </div>
-                <div class="card">
-                    <h3>Diagnostic & Research Labs</h3>
-                </div>
-                <div class="card">
-                    <h3>Pharmacies & Specialty Pharma</h3>
-                </div>
-                <div class="card">
-                    <h3>Healthcare Suppliers</h3>
-                </div>
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Medical & Pharma Delivery in Irvine</h1>
+        <p>Reliable same-day & scheduled deliveries for labs, clinics, and pharmacies across Orange County.</p>
+        <p class="hero-sub">Fleet Stride Logistics founders bring enterprise logistics expertise to every local delivery.</p>
+        <a href="mailto:fleetstride@gmail.com?subject=Free%20Trial%20Delivery" class="cta-button">Book a Free Trial Delivery</a>
+        <div class="phone-number"><a href="tel:8009994456" style="text-decoration:none;color:#1e293b;">800-999-4456</a></div>
+    </section>
+
+    <!-- Who we serve -->
+    <section class="who">
+        <h2>We work with:</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="icons/clinic.svg" alt="Medical Clinics Icon">
+                <h3>Medical Clinics</h3>
+                <p>Secure delivery of critical medical supplies</p>
             </div>
-        </section>
-
-        <!-- Why trust us -->
-        <section class="trust">
-            <h2>Why Fleet Stride</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>HIPAA-aware handling</h3>
-                </div>
-                <div class="card">
-                    <h3>Chain-of-custody discipline</h3>
-                </div>
-                <div class="card">
-                    <h3>Local Irvine-based operations</h3>
-                </div>
-                <div class="card">
-                    <h3>Enterprise logistics experience (ex-Amazon & Oracle leadership)</h3>
-                </div>
+            <div class="card">
+                <img src="icons/lab.svg" alt="Diagnostic Labs Icon">
+                <h3>Diagnostic & Research Labs</h3>
+                <p>Timely transport of samples & lab equipment</p>
             </div>
-        </section>
+            <div class="card">
+                <img src="icons/pharmacy.svg" alt="Pharmacies Icon">
+                <h3>Pharmacies & Specialty Pharma</h3>
+                <p>HIPAA-compliant same-day deliveries</p>
+            </div>
+            <div class="card">
+                <img src="icons/supplier.svg" alt="Healthcare Suppliers Icon">
+                <h3>Healthcare Suppliers</h3>
+                <p>Reliable logistics for equipment & sensitive materials</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- How it works -->
-        <section class="how">
-            <h2>How it works</h2>
-            <ol>
-                <li>Book a 10-minute call</li>
-                <li>We understand your routes & volume</li>
-                <li>You try a free or pilot delivery</li>
-                <li>Scale only if it works</li>
-            </ol>
-        </section>
+    <!-- Why Fleet Stride -->
+    <section class="trust">
+        <h2>Why Fleet Stride Logistics</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="icons/shield.svg" alt="HIPAA Icon">
+                <h3>HIPAA-aware handling</h3>
+                <p>Strict privacy standards for all deliveries</p>
+            </div>
+            <div class="card">
+                <img src="icons/checklist.svg" alt="Chain-of-custody Icon">
+                <h3>Chain-of-custody discipline</h3>
+                <p>No lost samples; full accountability</p>
+            </div>
+            <div class="card">
+                <img src="icons/location.svg" alt="Local Operations Icon">
+                <h3>Local Irvine-based operations</h3>
+                <p>Fast response and local knowledge</p>
+            </div>
+            <div class="card">
+                <img src="icons/briefcase.svg" alt="Enterprise Experience Icon">
+                <h3>Enterprise logistics experience</h3>
+                <p>Past leadership at Amazon & Oracle managing 150+ drivers, 70–80 vehicles, 15k packages/day — applied to high-quality local delivery.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- CTA Close -->
-        <section class="close" id="book">
-            <h2>Need a reliable medical courier in Irvine?</h2>
-            <a href="mailto:fleetstride@gmail.com?subject=Free%20Trial%20Delivery">Book a Free Trial Delivery</a>
-            <div class="phone-number">800-999-4456</div>
-        </section>
+    <!-- How it works -->
+    <section class="how">
+        <h2>How it works</h2>
+        <ol>
+            <li>Book a 10-minute call – understand your needs</li>
+            <li>We review routes & volume – optimize delivery</li>
+            <li>Try a free or pilot delivery – risk-free test</li>
+            <li>Scale only if it works – no surprises</li>
+        </ol>
+    </section>
 
-    </main>
+    <!-- Final CTA -->
+    <section class="close" id="book">
+        <h2>Need a reliable medical courier in Irvine?</h2>
+        <a href="mailto:fleetstride@gmail.com?subject=Free%20Trial%20Delivery" class="cta-button">Book a Free Trial Delivery</a>
+        <div class="phone-number"><a href="tel:8009994456" style="text-decoration:none;color:#1e293b;">800-999-4456</a></div>
+        <p style="margin-top:10px;color:#475569;">HIPAA-compliant, fast, trusted by local clinics & labs</p>
+    </section>
+
+</main>
+
 </body>
 </html>
-
-
-
