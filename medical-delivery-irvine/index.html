@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical & Pharma Delivery in Irvine | Fleet Stride</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
     <link rel="stylesheet" href="../style.css">
     <style>
         body {
@@ -14,9 +18,16 @@
             background: #f8fafc;
         }
 
+        /* Logo */
+        .logo {
+            display: block;
+            max-width: 180px;
+            margin: 20px auto;
+        }
+
         /* Hero section */
         .hero {
-            padding: 80px 20px;
+            padding: 60px 20px 80px 20px;
             text-align: center;
             background: linear-gradient(135deg, #c3dafe, #e0e7ff);
             border-radius: 0 0 30px 30px;
@@ -41,10 +52,16 @@
             text-decoration: none;
             box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
             transition: all 0.3s ease;
+            cursor: pointer;
         }
         .hero a:hover {
             transform: translateY(-3px);
             box-shadow: 0 12px 25px rgba(79, 70, 229, 0.5);
+        }
+        .phone-number {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            font-weight: 500;
         }
 
         /* Section styling */
@@ -115,16 +132,23 @@
             transform: translateY(-3px);
             box-shadow: 0 12px 25px rgba(79, 70, 229, 0.5);
         }
+        .close .phone-number {
+            margin-top: 8px;
+        }
     </style>
 </head>
 <body>
     <main class="landing-page">
 
+        <!-- Logo -->
+        <img src="logo.png" alt="Fleet Stride Logo" class="logo">
+
         <!-- Hero -->
         <section class="hero">
             <h1>Medical & Pharma Delivery in Irvine</h1>
             <p>Reliable same-day and scheduled medical deliveries for labs, clinics, and pharmacies across Orange County.</p>
-            <a href="#book">Book a Free Trial Delivery</a>
+            <a href="mailto:fleetstride@gmail.com?subject=Free%20Trial%20Delivery">Book a Free Trial Delivery</a>
+            <div class="phone-number">800-999-4456</div>
         </section>
 
         <!-- Who we serve -->
@@ -133,19 +157,15 @@
             <div class="cards">
                 <div class="card">
                     <h3>Medical Clinics</h3>
-                    <p>Efficient and secure delivery of critical medical supplies.</p>
                 </div>
                 <div class="card">
                     <h3>Diagnostic & Research Labs</h3>
-                    <p>Timely transport for samples and lab equipment with chain-of-custody discipline.</p>
                 </div>
                 <div class="card">
                     <h3>Pharmacies & Specialty Pharma</h3>
-                    <p>Scheduled and same-day deliveries, fully HIPAA-aware.</p>
                 </div>
                 <div class="card">
                     <h3>Healthcare Suppliers</h3>
-                    <p>Reliable logistics for equipment, devices, and sensitive materials.</p>
                 </div>
             </div>
         </section>
@@ -156,15 +176,15 @@
             <div class="cards">
                 <div class="card">
                     <h3>HIPAA-aware handling</h3>
-                    <p>All operations follow strict patient privacy standards.</p>
+                </div>
+                <div class="card">
+                    <h3>Chain-of-custody discipline</h3>
                 </div>
                 <div class="card">
                     <h3>Local Irvine-based operations</h3>
-                    <p>Quick response times with local knowledge.</p>
                 </div>
                 <div class="card">
-                    <h3>Enterprise logistics experience</h3>
-                    <p>150+ drivers, 70–80 vehicles, high-volume operations optimized with data-driven routing (ex-Amazon & Oracle leadership).</p>
+                    <h3>Enterprise logistics experience (ex-Amazon & Oracle leadership)</h3>
                 </div>
             </div>
         </section>
@@ -183,7 +203,8 @@
         <!-- CTA Close -->
         <section class="close" id="book">
             <h2>Need a reliable medical courier in Irvine?</h2>
-            <a href="#book">Book a Free Trial Delivery</a>
+            <a href="mailto:fleetstride@gmail.com?subject=Free%20Trial%20Delivery">Book a Free Trial Delivery</a>
+            <div class="phone-number">800-999-4456</div>
         </section>
 
     </main>
