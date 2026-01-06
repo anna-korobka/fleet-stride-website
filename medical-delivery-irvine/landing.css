@@ -27,7 +27,7 @@ body {
     width: 65%;
     max-width: 980px;
     margin: 0 auto;
-    padding: 48px 28px 42px; /* reduced padding */
+    padding: 38px 18px 32px; /* reduced padding */
     text-align: center;
     background: linear-gradient(135deg, #c3dafe, #e0e7ff);
     border-radius: 0 0 32px 32px;
