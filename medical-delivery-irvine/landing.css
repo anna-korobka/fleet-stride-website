@@ -1,0 +1,101 @@
+/* Scope everything to this page */
+.landing-page {
+    background: #f8fafc;
+}
+
+/* HERO */
+.landing-page .hero {
+    padding: 80px 20px 60px;
+    text-align: center;
+    background: linear-gradient(135deg, #eef2ff, #ffffff);
+    border-radius: 0 0 32px 32px;
+}
+
+.landing-page h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.landing-page .hero p {
+    max-width: 720px;
+    margin: 0 auto 12px;
+    color: #475569;
+}
+
+/* CTA */
+.landing-page .cta-button {
+    display: inline-block;
+    padding: 16px 36px;
+    background: #4f46e5;
+    color: white;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(79,70,229,0.35);
+    transition: all 0.25s ease;
+}
+
+.landing-page .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 35px rgba(79,70,229,0.45);
+}
+
+/* SECTIONS */
+.landing-page section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* CARDS */
+.landing-page .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.landing-page .card {
+    background: white;
+    padding: 28px 24px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(15,23,42,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.landing-page .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px rgba(15,23,42,0.12);
+}
+
+.landing-page .card img {
+    width: 48px;
+    margin-bottom: 14px;
+}
+
+/* TRUST SECTION */
+.landing-page .trust {
+    background: white;
+    padding: 50px 20px;
+    border-radius: 28px;
+    box-shadow: 0 25px 60px rgba(15,23,42,0.08);
+}
+
+.landing-page .trust .card img {
+    filter: hue-rotate(8deg) saturate(1.15);
+}
+
+/* HOW IT WORKS */
+.landing-page .how ol {
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .landing-page h1 {
+        font-size: 2.1rem;
+    }
+}
