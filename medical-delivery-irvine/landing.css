@@ -1,7 +1,6 @@
 /* ================== */
 /* RESET DEFAULT MARGINS */
 /* ================== */
-
 html, body, main, section {
     margin: 0;
     padding: 0;
@@ -11,7 +10,6 @@ html, body, main, section {
 /* ================== */
 /* GENERAL PAGE STYLES */
 /* ================== */
-
 body {
     font-family: 'Inter', sans-serif;
     color: #1e293b;
@@ -26,9 +24,8 @@ body {
 /* ================== */
 /* HERO SECTION */
 /* ================== */
-
 .landing-page .hero {
-    padding: 0 15px 25px;
+    padding: 20px 15px 25px; /* reduced top padding */
     text-align: center;
     background: linear-gradient(135deg, #c3dafe, #e0e7ff);
     border-radius: 0 0 32px 32px;
@@ -93,16 +90,15 @@ body {
 /* ================== */
 /* SECTIONS */
 /* ================== */
-
 .landing-page section {
     max-width: 1100px;
-    margin: 60px auto;
+    margin: 40px auto; /* reduced spacing between sections */
     padding: 0 20px;
 }
 
 .landing-page h2 {
     font-size: 2rem;
-    margin-bottom: 25px;
+    margin-bottom: 20px; /* reduced bottom margin */
     text-align: center;
 }
 
@@ -110,12 +106,14 @@ body {
 .landing-page .pain {
     text-align: center;
     max-width: 720px;
-    margin: 60px auto;
+    margin: 40px auto;
 }
+
 .landing-page .pain h2 {
     font-size: 1.8rem;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
+
 .landing-page .pain p {
     font-size: 1.1rem;
     color: #475569;
