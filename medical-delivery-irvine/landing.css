@@ -1,12 +1,16 @@
 /* ================== */
-/* GENERAL PAGE STYLES */
+/* RESET DEFAULT MARGINS */
 /* ================== */
 
-html, body {
+html, body, main, section {
     margin: 0;
     padding: 0;
-    height: 100%; /* ensures hero touches top of page */
+    height: 100%;
 }
+
+/* ================== */
+/* GENERAL PAGE STYLES */
+/* ================== */
 
 body {
     font-family: 'Inter', sans-serif;
@@ -24,33 +28,29 @@ body {
 /* ================== */
 
 .landing-page .hero {
-    padding: 0 15px 25px;       /* bottom padding only */
+    padding: 0 15px 25px;
     text-align: center;
     background: linear-gradient(135deg, #c3dafe, #e0e7ff);
     border-radius: 0 0 32px 32px;
-    overflow: hidden;           /* contains child margins */
+    overflow: hidden;
 }
 
-/* Remove top margin from all children inside hero */
 .landing-page .hero > * {
     margin-top: 0;
 }
 
-/* Logo spacing & centering */
 .landing-page .hero img.logo {
-    display: block;       /* important: center image */
-    margin: 0 auto 15px;  /* horizontally center + bottom spacing */
+    display: block;
+    margin: 0 auto 15px;
     max-width: 180px;
 }
 
-/* Headline */
 .landing-page .hero h1 {
     font-size: 2.8rem;
     font-weight: 700;
     margin: 0 0 15px;
 }
 
-/* Hero paragraphs */
 .landing-page .hero p {
     font-size: 1.25rem;
     margin: 0 0 10px;
@@ -63,7 +63,7 @@ body {
     margin-bottom: 25px;
 }
 
-/* CTA button */
+/* CTA BUTTON */
 .landing-page .cta-button {
     display: inline-block;
     padding: 18px 40px;
@@ -100,7 +100,6 @@ body {
     padding: 0 20px;
 }
 
-/* SECTION HEADINGS */
 .landing-page h2 {
     font-size: 2rem;
     margin-bottom: 25px;
