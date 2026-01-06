@@ -9,11 +9,13 @@ html, body {
 
 /* HERO */
 .landing-page .hero {
-    padding: 0px 15px 25px; /* reduced top and bottom padding */
+    padding: 0 15px 25px;       /* bottom padding only */
     text-align: center;
-    /* stronger gradient with more contrast */
     background: linear-gradient(135deg, #c3dafe, #e0e7ff);
     border-radius: 0 0 32px 32px;
+    
+    /* Prevent margin collapse */
+    overflow: hidden;          /* contains child margins */
 }
 
 /* Logo spacing */
