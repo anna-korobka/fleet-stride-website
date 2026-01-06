@@ -1,13 +1,14 @@
 /* ================== */
-/* RESET DEFAULT MARGINS AND PADDING */
+/* RESET & GLOBAL STYLES */
 /* ================== */
-html, body {
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
 }
 
-body {
+html, body {
+    height: 100%;
     font-family: 'Inter', sans-serif;
     color: #1e293b;
     line-height: 1.6;
@@ -15,7 +16,7 @@ body {
 }
 
 /* ================== */
-/* LANDING PAGE STYLES */
+/* LANDING PAGE */
 /* ================== */
 .landing-page {
     background: #f8fafc;
@@ -25,43 +26,44 @@ body {
 /* HERO SECTION */
 /* ================== */
 .landing-page .hero {
-    padding: 40px 15px 40px 15px; /* consistent top and bottom padding */
-    text-align: center;
     background: linear-gradient(135deg, #c3dafe, #e0e7ff);
     border-radius: 0 0 32px 32px;
-    overflow: hidden;
     min-height: 100vh; /* full viewport height */
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* vertically center content */
+    justify-content: center; /* horizontally center content */
+    align-items: center; /* vertically center content */
+    padding: 40px 20px;
+    overflow: hidden;
 }
 
-.landing-page .hero > * {
-    margin-top: 0;
+.landing-page .hero .hero-container {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.landing-page .hero img.logo {
+    display: block;
+    margin: 0 auto 25px;
+    max-width: 180px;
 }
 
 .landing-page .hero h1 {
     font-size: 2.8rem;
     font-weight: 700;
-    margin: 0 0 15px;
+    margin: 0 0 20px;
 }
 
 .landing-page .hero p {
     font-size: 1.25rem;
-    margin: 0 0 10px;
+    margin: 0 0 12px;
     color: #475569;
 }
 
 .landing-page .hero .hero-sub {
     font-size: 1rem;
     color: #334155;
-    margin-bottom: 25px;
-}
-
-.landing-page .hero img.logo {
-    display: block;
-    margin: 0 auto 15px;
-    max-width: 180px;
+    margin-bottom: 30px;
 }
 
 /* CTA BUTTON */
@@ -75,6 +77,7 @@ body {
     text-decoration: none;
     box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
     transition: all 0.3s ease;
+    margin-top: 10px;
 }
 
 .landing-page .cta-button:hover {
@@ -88,7 +91,7 @@ body {
     color: #1e293b;
     font-weight: 500;
     display: block;
-    margin-top: 8px;
+    margin-top: 12px;
 }
 
 /* ================== */
@@ -96,13 +99,13 @@ body {
 /* ================== */
 .landing-page section {
     max-width: 1100px;
-    margin: 30px auto; /* reduced from 40-60px */
+    margin: 50px auto; /* more breathing space */
     padding: 0 20px;
 }
 
 .landing-page h2 {
     font-size: 2rem;
-    margin-bottom: 18px; /* reduced */
+    margin-bottom: 22px;
     text-align: center;
 }
 
@@ -110,12 +113,12 @@ body {
 .landing-page .pain {
     text-align: center;
     max-width: 720px;
-    margin: 30px auto;
+    margin: 50px auto;
 }
 
 .landing-page .pain h2 {
     font-size: 1.8rem;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .landing-page .pain p {
@@ -173,7 +176,7 @@ body {
 /* FINAL CTA */
 .landing-page .close {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 /* ================== */
@@ -181,6 +184,6 @@ body {
 /* ================== */
 @media(max-width:600px){
     .landing-page .hero h1 { font-size:2.2rem; }
-    .landing-page .hero img.logo { max-width:140px; margin-bottom:12px; }
+    .landing-page .hero img.logo { max-width:140px; margin-bottom:15px; }
     .landing-page .cards { grid-template-columns: 1fr; }
 }
