@@ -2,6 +2,8 @@
 .landing-page {
     background: #f8fafc;
 }
+
+/* Remove default body/html margins */
 html, body {
     margin: 0;
     padding: 0;
@@ -13,11 +15,13 @@ html, body {
     text-align: center;
     background: linear-gradient(135deg, #c3dafe, #e0e7ff);
     border-radius: 0 0 32px 32px;
-    
-    /* Prevent margin collapse */
-    overflow: hidden;          /* contains child margins */
+
+    /* Prevent margin collapse and ensure gradient reaches top */
+    overflow: hidden;
 }
-.landing-page .hero > *:first-child {
+
+/* Remove top margin from all children inside hero */
+.landing-page .hero > * {
     margin-top: 0;
 }
 
@@ -25,13 +29,14 @@ html, body {
 .landing-page .hero img.logo {
     max-width: 160px;
     margin-bottom: 15px; /* closer to headline */
+    display: block;       /* avoids inline spacing issues */
 }
 
 /* Headline */
 .landing-page h1 {
     font-size: 2.6rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin: 0 0 10px;     /* remove top margin completely */
 }
 
 /* Hero paragraphs */
@@ -133,8 +138,9 @@ html, body {
         font-size: 2.1rem;
     }
 
+    /* Hero padding stays consistent on mobile */
     .landing-page .hero {
-        padding: 30px 15px 25px;
+        padding: 0 15px 25px;
     }
 
     .landing-page .hero img.logo {
