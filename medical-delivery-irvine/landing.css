@@ -17,6 +17,9 @@ html, body {
     /* Prevent margin collapse */
     overflow: hidden;          /* contains child margins */
 }
+.landing-page .hero > *:first-child {
+    margin-top: 0;
+}
 
 /* Logo spacing */
 .landing-page .hero img.logo {
