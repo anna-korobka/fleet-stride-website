@@ -1,7 +1,15 @@
+/* ================== */
 /* GENERAL PAGE STYLES */
+/* ================== */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* ensures hero touches top of page */
+}
+
 body {
     font-family: 'Inter', sans-serif;
-    margin: 0;
     color: #1e293b;
     line-height: 1.6;
     background: #f8fafc;
@@ -11,13 +19,16 @@ body {
     background: #f8fafc;
 }
 
-/* HERO */
+/* ================== */
+/* HERO SECTION */
+/* ================== */
+
 .landing-page .hero {
     padding: 0 15px 25px;       /* bottom padding only */
     text-align: center;
     background: linear-gradient(135deg, #c3dafe, #e0e7ff);
     border-radius: 0 0 32px 32px;
-    overflow: hidden;           /* prevents child margin collapse */
+    overflow: hidden;           /* contains child margins */
 }
 
 /* Remove top margin from all children inside hero */
@@ -25,11 +36,11 @@ body {
     margin-top: 0;
 }
 
-/* Logo spacing */
+/* Logo spacing & centering */
 .landing-page .hero img.logo {
+    display: block;       /* important: center image */
+    margin: 0 auto 15px;  /* horizontally center + bottom spacing */
     max-width: 180px;
-    margin-bottom: 15px;
-    display: block; /* ensures centering */
 }
 
 /* Headline */
@@ -79,7 +90,10 @@ body {
     margin-top: 8px;
 }
 
+/* ================== */
 /* SECTIONS */
+/* ================== */
+
 .landing-page section {
     max-width: 1100px;
     margin: 60px auto;
@@ -161,7 +175,9 @@ body {
     margin-bottom: 40px;
 }
 
+/* ================== */
 /* MOBILE RESPONSIVE */
+/* ================== */
 @media(max-width:600px){
     .landing-page .hero h1 { font-size:2.2rem; }
     .landing-page .hero img.logo { max-width:140px; margin-bottom:12px; }
