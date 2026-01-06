@@ -5,7 +5,7 @@
 
 /* HERO */
 .landing-page .hero {
-    padding: 35px 15px 25px; /* reduced top and bottom padding */
+    padding: 0px 15px 25px; /* reduced top and bottom padding */
     text-align: center;
     /* stronger gradient with more contrast */
     background: linear-gradient(135deg, #c3dafe, #e0e7ff);
