@@ -1,15 +1,12 @@
 /* ================== */
-/* RESET DEFAULT MARGINS */
+/* RESET DEFAULT MARGINS AND PADDING */
 /* ================== */
-html, body, main, section {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-/* ================== */
-/* GENERAL PAGE STYLES */
-/* ================== */
 body {
     font-family: 'Inter', sans-serif;
     color: #1e293b;
@@ -17,6 +14,9 @@ body {
     background: #f8fafc;
 }
 
+/* ================== */
+/* LANDING PAGE STYLES */
+/* ================== */
 .landing-page {
     background: #f8fafc;
 }
@@ -25,21 +25,19 @@ body {
 /* HERO SECTION */
 /* ================== */
 .landing-page .hero {
-    padding: 20px 15px 25px; /* reduced top padding */
+    padding: 40px 15px 40px 15px; /* consistent top and bottom padding */
     text-align: center;
     background: linear-gradient(135deg, #c3dafe, #e0e7ff);
     border-radius: 0 0 32px 32px;
     overflow: hidden;
+    min-height: 100vh; /* full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center content */
 }
 
 .landing-page .hero > * {
     margin-top: 0;
-}
-
-.landing-page .hero img.logo {
-    display: block;
-    margin: 0 auto 15px;
-    max-width: 180px;
 }
 
 .landing-page .hero h1 {
@@ -58,6 +56,12 @@ body {
     font-size: 1rem;
     color: #334155;
     margin-bottom: 25px;
+}
+
+.landing-page .hero img.logo {
+    display: block;
+    margin: 0 auto 15px;
+    max-width: 180px;
 }
 
 /* CTA BUTTON */
@@ -92,13 +96,13 @@ body {
 /* ================== */
 .landing-page section {
     max-width: 1100px;
-    margin: 40px auto; /* reduced spacing between sections */
+    margin: 30px auto; /* reduced from 40-60px */
     padding: 0 20px;
 }
 
 .landing-page h2 {
     font-size: 2rem;
-    margin-bottom: 20px; /* reduced bottom margin */
+    margin-bottom: 18px; /* reduced */
     text-align: center;
 }
 
@@ -106,7 +110,7 @@ body {
 .landing-page .pain {
     text-align: center;
     max-width: 720px;
-    margin: 40px auto;
+    margin: 30px auto;
 }
 
 .landing-page .pain h2 {
@@ -169,7 +173,7 @@ body {
 /* FINAL CTA */
 .landing-page .close {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 /* ================== */
