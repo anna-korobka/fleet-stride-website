@@ -1,189 +1,112 @@
-/* ================== */
-/* RESET & GLOBAL STYLES */
-/* ================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical & Pharma Delivery in Irvine | Fleet Stride Logistics</title>
+<link rel="stylesheet" href="landing.css">
+<link rel="icon" type="image/png" href="/logo_transp.png">
+</head>
+<body>
 
-html, body {
-    height: 100%;
-    font-family: 'Inter', sans-serif;
-    color: #1e293b;
-    line-height: 1.6;
-    background: #f8fafc;
-}
+<main class="landing-page">
 
-/* ================== */
-/* LANDING PAGE */
-/* ================== */
-.landing-page {
-    background: #f8fafc;
-}
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-container">
+            <img src="/logo_transp.png" alt="Fleet Stride Logistics Logo" class="logo">
+            <h1>Medical & Pharma Delivery in Irvine</h1>
+            <p>Reliable same-day and scheduled deliveries for labs, clinics, and pharmacies across Orange County.</p>
+            <p class="hero-sub">Enterprise logistics experience, applied to high-quality local medical delivery.</p>
+            <a href="mailto:fleetstride@gmail.com?subject=Free%20Trial%20Delivery" class="cta-button">Book a Free Trial Delivery</a>
+            <div class="phone-number">
+                <a href="tel:8009994456">800-999-4456</a>
+            </div>
+        </div>
+    </section>
 
-/* ================== */
-/* HERO SECTION */
-/* ================== */
-.landing-page .hero {
-    background: linear-gradient(135deg, #c3dafe, #e0e7ff);
-    border-radius: 0 0 32px 32px;
-    min-height: 100vh; /* full viewport height */
-    display: flex;
-    justify-content: center; /* horizontally center content */
-    align-items: center; /* vertically center content */
-    padding: 40px 20px;
-    overflow: hidden;
-}
+    <!-- PAIN SECTION -->
+    <section class="pain">
+        <h2>Do you still have to double-check that critical medical deliveries were completed correctly?</h2>
+        <p>If delivery reliability requires constant oversight, it’s time for a logistics partner — not another on-demand courier.</p>
+    </section>
 
-.landing-page .hero .hero-container {
-    max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
-}
+    <!-- WHO WE SUPPORT -->
+    <section class="who">
+        <h2>Who we support</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="MC1.png" alt="Medical Clinics icon">
+                <h3>Medical Clinics</h3>
+                <p>Secure delivery of time-sensitive medical supplies</p>
+            </div>
+            <div class="card">
+                <img src="MC2.png" alt="Diagnostic & Research Labs icon">
+                <h3>Diagnostic & Research Labs</h3>
+                <p>Reliable transport of samples and lab equipment</p>
+            </div>
+            <div class="card">
+                <img src="MC3.png" alt="Pharmacies and Specialty icon">
+                <h3>Pharmacies & Specialty Pharma</h3>
+                <p>HIPAA-aware same-day and scheduled deliveries</p>
+            </div>
+            <div class="card">
+                <img src="MC4.png" alt="Healthcare Suppliers icon">
+                <h3>Healthcare Suppliers</h3>
+                <p>Dependable logistics for equipment and sensitive materials</p>
+            </div>
+        </div>
+    </section>
 
-.landing-page .hero img.logo {
-    display: block;
-    margin: 0 auto 25px;
-    max-width: 180px;
-}
+    <!-- WHY FLEET STRIDE -->
+    <section class="trust">
+        <h2>Why teams choose Fleet Stride</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="HH1.png" alt="HIPAA icon">
+                <h3>HIPAA-aware handling</h3>
+                <p>Privacy-first operations for every delivery</p>
+            </div>
+            <div class="card">
+                <img src="HH2.png" alt="Chain of Custody icon">
+                <h3>Chain-of-custody discipline</h3>
+                <p>Clear accountability from pickup to drop-off</p>
+            </div>
+            <div class="card">
+                <img src="HH3.png" alt="Local Irvine icon">
+                <h3>Local Irvine-based operations</h3>
+                <p>Fast response times with local oversight</p>
+            </div>
+            <div class="card">
+                <img src="HH4.png" alt="Enterprise icon">
+                <h3>Enterprise logistics experience</h3>
+                <p>Leadership experience at Amazon & Oracle — applied to reliable, high-quality local medical delivery.</p>
+            </div>
+        </div>
+    </section>
 
-.landing-page .hero h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin: 0 0 20px;
-}
+    <!-- HOW IT WORKS -->
+    <section class="how">
+        <h2>How it works</h2>
+        <ol>
+            <li><strong>Book a 10-minute call</strong> — we understand your delivery needs</li>
+            <li><strong>Review routes & volume</strong> — design a reliable approach</li>
+            <li><strong>Try a free or pilot delivery</strong> — no commitment</li>
+            <li><strong>Scale if it works</strong> — weekly delivery support with clear ownership</li>
+        </ol>
+    </section>
 
-.landing-page .hero p {
-    font-size: 1.25rem;
-    margin: 0 0 12px;
-    color: #475569;
-}
+    <!-- FINAL CTA -->
+    <section class="close">
+        <h2>Looking for a medical courier you don’t have to manage?</h2>
+        <a href="mailto:fleetstride@gmail.com?subject=Free%20Trial%20Delivery" class="cta-button">Book a Free Trial Delivery</a>
+        <div class="phone-number">
+            <a href="tel:8009994456">800-999-4456</a>
+        </div>
+        <p style="margin-top:8px;color:#475569;">HIPAA-aware. Reliable. Trusted by local clinics and labs.</p>
+    </section>
 
-.landing-page .hero .hero-sub {
-    font-size: 1rem;
-    color: #334155;
-    margin-bottom: 30px;
-}
+</main>
 
-/* CTA BUTTON */
-.landing-page .cta-button {
-    display: inline-block;
-    padding: 18px 40px;
-    background-color: #4f46e5;
-    color: white;
-    font-weight: 600;
-    border-radius: 12px;
-    text-decoration: none;
-    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
-    transition: all 0.3s ease;
-    margin-top: 10px;
-}
-
-.landing-page .cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(79, 70, 229, 0.5);
-}
-
-/* Phone number below CTA */
-.landing-page .phone-number a {
-    text-decoration: none;
-    color: #1e293b;
-    font-weight: 500;
-    display: block;
-    margin-top: 12px;
-}
-
-/* ================== */
-/* SECTIONS */
-/* ================== */
-.landing-page section {
-    max-width: 1100px;
-    margin: 50px auto; /* more breathing space */
-    padding: 0 20px;
-}
-
-.landing-page h2 {
-    font-size: 2rem;
-    margin-bottom: 22px;
-    text-align: center;
-}
-
-/* PAIN SECTION */
-.landing-page .pain {
-    text-align: center;
-    max-width: 720px;
-    margin: 50px auto;
-}
-
-.landing-page .pain h2 {
-    font-size: 1.8rem;
-    margin-bottom: 14px;
-}
-
-.landing-page .pain p {
-    font-size: 1.1rem;
-    color: #475569;
-}
-
-/* CARDS */
-.landing-page .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.landing-page .card {
-    background: white;
-    padding: 18px 15px;
-    border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.landing-page .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-}
-
-.landing-page .card img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-}
-
-.landing-page .card h3 {
-    margin-bottom: 6px;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.landing-page .card p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: #475569;
-}
-
-/* HOW IT WORKS */
-.landing-page .how ol {
-    padding-left: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 1.05rem;
-}
-
-/* FINAL CTA */
-.landing-page .close {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-/* ================== */
-/* MOBILE RESPONSIVE */
-/* ================== */
-@media(max-width:600px){
-    .landing-page .hero h1 { font-size:2.2rem; }
-    .landing-page .hero img.logo { max-width:140px; margin-bottom:15px; }
-    .landing-page .cards { grid-template-columns: 1fr; }
-}
+</body>
+</html>
