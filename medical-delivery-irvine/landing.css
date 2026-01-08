@@ -4,13 +4,13 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box; /* include padding/border in width */
+    box-sizing: border-box;
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
 body {
@@ -28,17 +28,17 @@ body {
 }
 
 /* ================== */
-/* HERO (CENTERED POCKET) */
+/* HERO (COMPACT PREMIUM) */
 /* ================== */
 .landing-page .hero {
-    width: 65%;
-    max-width: 980px;
+    width: 70%;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 22px 18px 26px; /* shorter hero */
+    padding: 16px 18px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #a5b4fc, #6366f1); /* richer gradient */
+    background: linear-gradient(135deg, #06b6d4, #0ea5e9, #3b82f6); /* premium medical gradient */
     border-radius: 0 0 32px 32px;
-    color: #ffffff; /* text contrast for gradient */
+    color: #ffffff;
     position: relative;
 }
 
@@ -47,51 +47,51 @@ body {
 }
 
 .landing-page .hero img.logo {
-    max-width: 160px;
-    margin-bottom: 12px;
-    margin-top: 10px; /* less space from top */
+    max-width: 120px;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 .landing-page .hero h1 {
-    font-size: 2.4rem;
-    margin-bottom: 12px;
+    font-size: 2rem;
+    margin-bottom: 8px;
     font-weight: 700;
 }
 
 .landing-page .hero p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #f1f5f9;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .landing-page .hero .hero-sub {
-    font-size: 0.95rem;
-    color: #e0e7ff;
-    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #e0f2fe;
+    margin-bottom: 12px;
 }
 
 /* CTA BUTTON */
 .landing-page .cta-button {
     display: inline-block;
-    padding: 16px 36px;
-    background: #4f46e5;
+    padding: 14px 28px;
+    background: #2563eb; /* darker blue for contrast on gradient */
     color: #ffffff;
     font-weight: 600;
     border-radius: 12px;
     text-decoration: none;
-    box-shadow: 0 8px 20px rgba(79,70,229,0.35);
+    box-shadow: 0 8px 20px rgba(37,99,235,0.35);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .landing-page .cta-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 26px rgba(79,70,229,0.45);
+    box-shadow: 0 12px 26px rgba(37,99,235,0.45);
 }
 
 /* PHONE NUMBER */
 .landing-page .phone-number a {
     display: inline-block;
-    margin-top: 14px;
+    margin-top: 12px;
     font-size: 1rem;
     font-weight: 600;
     color: #f1f5f9;
@@ -101,7 +101,16 @@ body {
 .landing-page .phone-number a::before {
     content: "Call us: ";
     font-weight: 500;
-    color: #e0e7ff;
+    color: #e0f2fe;
+}
+
+/* FINAL CTA PHONE - more visible */
+.landing-page .phone-number.phone-final a {
+    color: #1e3a8a; /* dark blue for better contrast */
+}
+
+.landing-page .phone-number.phone-final a::before {
+    color: #1e3a8a;
 }
 
 /* ================== */
@@ -132,7 +141,7 @@ body {
 }
 
 /* ================== */
-/* OTHER SECTIONS */
+/* OTHER SECTIONS & CARDS */
 /* ================== */
 .landing-page section:not(.hero):not(.pain) {
     width: 100%;
@@ -141,16 +150,12 @@ body {
     padding: 0 20px;
 }
 
-/* HEADINGS */
 .landing-page h2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 22px;
 }
 
-/* ================== */
-/* CARDS */
-/* ================== */
 .landing-page .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -189,9 +194,7 @@ body {
     margin: 0;
 }
 
-/* ================== */
 /* HOW IT WORKS */
-/* ================== */
 .landing-page .how ol {
     max-width: 600px;
     margin: 0 auto;
@@ -199,27 +202,23 @@ body {
     font-size: 1.05rem;
 }
 
-/* ================== */
 /* FINAL CTA */
-/* ================== */
 .landing-page .close {
     text-align: center;
     margin-bottom: 64px;
 }
 
-/* ================== */
 /* MOBILE RESPONSIVENESS */
-/* ================== */
 @media (max-width: 900px) {
     .landing-page .hero {
         width: 92%;
-        padding: 24px 20px 22px; /* smaller hero on medium screens */
+        padding: 20px 18px 18px;
     }
 }
 
 @media (max-width: 600px) {
     .landing-page .hero h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .landing-page .cards {
@@ -227,14 +226,19 @@ body {
     }
 
     .landing-page .hero img.logo {
-        max-width: 140px;
-        margin-bottom: 10px;
-        margin-top: 8px;
+        max-width: 100px;
+        margin-bottom: 8px;
+        margin-top: 6px;
     }
 
     .landing-page .hero p,
     .landing-page .hero .hero-sub,
     .landing-page .phone-number a {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+    }
+
+    .landing-page .cta-button {
+        padding: 12px 24px;
+        font-size: 0.9rem;
     }
 }
