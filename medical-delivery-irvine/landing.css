@@ -28,15 +28,16 @@ body {
 }
 
 /* ================== */
-/* HERO (COMPACT PREMIUM) */
+/* HERO (SOFTER PREMIUM) */
 /* ================== */
 .landing-page .hero {
     width: 70%;
     max-width: 900px;
     margin: 0 auto;
-    padding: 14px 18px 18px; /* slightly reduced top padding for logo balance */
+    padding: 14px 18px 18px;
     text-align: center;
-    background: linear-gradient(135deg, #06b6d4, #0ea5e9, #3b82f6, #1e3a8a); /* premium medical gradient */
+    /* Softer gradient for eyes, still premium */
+    background: linear-gradient(135deg, #0284c7, #0ea5e9, #3b82f6, #1e40af);
     border-radius: 0 0 32px 32px;
     color: #ffffff;
     position: relative;
@@ -49,7 +50,7 @@ body {
 .landing-page .hero img.logo {
     max-width: 120px;
     margin-bottom: 8px;
-    margin-top: 4px; /* slightly less space above logo */
+    margin-top: 4px;
 }
 
 .landing-page .hero h1 {
