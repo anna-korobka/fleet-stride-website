@@ -234,3 +234,17 @@ body {
         font-size: 0.9rem;
     }
 }
+/* FINAL CTA PHONE — FIX VISIBILITY ONLY */
+.landing-page .phone-final a {
+    color: #0f172a; /* strong contrast on white */
+    background: #ffffff;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(15,23,42,0.12);
+}
+
+.landing-page .phone-final a::before {
+    color: #475569;
+}
+
