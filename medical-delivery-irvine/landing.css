@@ -30,6 +30,14 @@ body {
 /* ================== */
 /* HERO (SOFTER PREMIUM) */
 /* ================== */
+/* HERO TRUST MICRO-SIGNAL */
+.landing-page .hero-trust {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #e0f2fe;
+    font-weight: 500;
+}
+
 .landing-page .hero {
     width: 70%;
     max-width: 900px;
