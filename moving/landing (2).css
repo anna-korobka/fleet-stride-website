@@ -1,0 +1,250 @@
+/* ================== */
+/* RESET & BOX-SIZING */
+/* ================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1e293b;
+    line-height: 1.6;
+    background: #f8fafc;
+}
+
+/* ================== */
+/* LANDING PAGE */
+/* ================== */
+.landing-page {
+    background: #f8fafc;
+}
+
+/* ================== */
+/* HERO (SOFTER PREMIUM) */
+/* ================== */
+.landing-page .hero {
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 14px 18px 18px;
+    text-align: center;
+    /* Softer gradient for eyes, still premium */
+    background: linear-gradient(135deg, #0284c7, #0ea5e9, #3b82f6, #1e40af);
+    border-radius: 0 0 32px 32px;
+    color: #ffffff;
+    position: relative;
+}
+
+.landing-page .hero * {
+    margin-top: 0;
+}
+
+.landing-page .hero img.logo {
+    max-width: 120px;
+    margin-bottom: 8px;
+    margin-top: 4px;
+}
+
+.landing-page .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.landing-page .hero p {
+    font-size: 1rem;
+    color: #f1f5f9;
+    margin-bottom: 6px;
+}
+
+.landing-page .hero .hero-sub {
+    font-size: 0.9rem;
+    color: #e0f2fe;
+    margin-bottom: 12px;
+}
+
+/* CTA BUTTON */
+.landing-page .cta-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #1e40af; /* deeper blue for contrast */
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(30,64,175,0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.landing-page .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(30,64,175,0.45);
+}
+
+/* PHONE NUMBER */
+.landing-page .phone-number a {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    text-decoration: none;
+}
+
+.landing-page .phone-number a::before {
+    content: "Call us: ";
+    font-weight: 500;
+    color: #e0f2fe;
+}
+
+/* ================== */
+/* PAIN SECTION */
+/* ================== */
+.landing-page .pain {
+    width: 100%;
+    margin: 64px 0;
+    padding: 0 20px;
+}
+
+.landing-page .pain h2,
+.landing-page .pain p {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.landing-page .pain h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.landing-page .pain p {
+    font-size: 1.05rem;
+    color: #475569;
+}
+
+/* ================== */
+/* OTHER SECTIONS & CARDS */
+/* ================== */
+.landing-page section:not(.hero):not(.pain) {
+    width: 100%;
+    max-width: 1100px;
+    margin: 64px auto;
+    padding: 0 20px;
+}
+
+.landing-page h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.landing-page .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.landing-page .card {
+    background: #ffffff;
+    padding: 20px 16px;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.landing-page .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.landing-page .card img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.landing-page .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.landing-page .card p {
+    font-size: 0.95rem;
+    color: #475569;
+    margin: 0;
+}
+
+/* HOW IT WORKS */
+.landing-page .how ol {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 20px;
+    font-size: 1.05rem;
+}
+
+/* FINAL CTA */
+.landing-page .close {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 900px) {
+    .landing-page .hero {
+        width: 92%;
+        padding: 20px 18px 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .landing-page .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .landing-page .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .landing-page .hero img.logo {
+        max-width: 100px;
+        margin-bottom: 8px;
+        margin-top: 4px;
+    }
+
+    .landing-page .hero p,
+    .landing-page .hero .hero-sub,
+    .landing-page .phone-number a {
+        font-size: 0.9rem;
+    }
+
+    .landing-page .cta-button {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+}
+/* FINAL CTA PHONE — FIX VISIBILITY ONLY */
+.landing-page .phone-final a {
+    color: #0f172a; /* strong contrast on white */
+    background: #ffffff;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(15,23,42,0.12);
+}
+
+.landing-page .phone-final a::before {
+    color: #475569;
+}
+
